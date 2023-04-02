@@ -1,0 +1,15 @@
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\C#OOP\bin\Debug\net7.0\C#OOP.exe
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\C#OOP\bin\Debug\net7.0\C#OOP.deps.json
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\C#OOP\bin\Debug\net7.0\C#OOP.runtimeconfig.json
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\C#OOP\bin\Debug\net7.0\C#OOP.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\C#OOP\bin\Debug\net7.0\C#OOP.pdb
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\C#OOP\obj\Debug\net7.0\C#OOP.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\C#OOP\obj\Debug\net7.0\C#OOP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\C#OOP\obj\Debug\net7.0\C#OOP.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\C#OOP\obj\Debug\net7.0\C#OOP.AssemblyInfo.cs
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\C#OOP\obj\Debug\net7.0\C#OOP.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\C#OOP\obj\Debug\net7.0\C#OOP.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\C#OOP\obj\Debug\net7.0\refint\C#OOP.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\C#OOP\obj\Debug\net7.0\C#OOP.pdb
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\C#OOP\obj\Debug\net7.0\C#OOP.genruntimeconfig.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\C#OOP\obj\Debug\net7.0\ref\C#OOP.dll

@@ -1,0 +1,5 @@
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Arrays_And_Loops\obj\Debug\net7.0\Arrays_And_Loops.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Arrays_And_Loops\obj\Debug\net7.0\Arrays_And_Loops.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Arrays_And_Loops\obj\Debug\net7.0\Arrays_And_Loops.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Arrays_And_Loops\obj\Debug\net7.0\Arrays_And_Loops.AssemblyInfo.cs
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Arrays_And_Loops\obj\Debug\net7.0\Arrays_And_Loops.csproj.CoreCompileInputs.cache
