@@ -1,0 +1,15 @@
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\TupleExample\bin\Debug\net7.0\TupleExample.exe
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\TupleExample\bin\Debug\net7.0\TupleExample.deps.json
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\TupleExample\bin\Debug\net7.0\TupleExample.runtimeconfig.json
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\TupleExample\bin\Debug\net7.0\TupleExample.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\TupleExample\bin\Debug\net7.0\TupleExample.pdb
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\TupleExample\obj\Debug\net7.0\TupleExample.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\TupleExample\obj\Debug\net7.0\TupleExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\TupleExample\obj\Debug\net7.0\TupleExample.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\TupleExample\obj\Debug\net7.0\TupleExample.AssemblyInfo.cs
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\TupleExample\obj\Debug\net7.0\TupleExample.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\TupleExample\obj\Debug\net7.0\TupleExample.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\TupleExample\obj\Debug\net7.0\refint\TupleExample.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\TupleExample\obj\Debug\net7.0\TupleExample.pdb
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\TupleExample\obj\Debug\net7.0\TupleExample.genruntimeconfig.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\TupleExample\obj\Debug\net7.0\ref\TupleExample.dll

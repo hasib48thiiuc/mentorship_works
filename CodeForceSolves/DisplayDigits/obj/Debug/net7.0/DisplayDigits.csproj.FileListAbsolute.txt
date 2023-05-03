@@ -1,0 +1,15 @@
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\DisplayDigits\bin\Debug\net7.0\DisplayDigits.exe
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\DisplayDigits\bin\Debug\net7.0\DisplayDigits.deps.json
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\DisplayDigits\bin\Debug\net7.0\DisplayDigits.runtimeconfig.json
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\DisplayDigits\bin\Debug\net7.0\DisplayDigits.dll
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\DisplayDigits\bin\Debug\net7.0\DisplayDigits.pdb
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\DisplayDigits\obj\Debug\net7.0\DisplayDigits.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\DisplayDigits\obj\Debug\net7.0\DisplayDigits.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\DisplayDigits\obj\Debug\net7.0\DisplayDigits.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\DisplayDigits\obj\Debug\net7.0\DisplayDigits.AssemblyInfo.cs
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\DisplayDigits\obj\Debug\net7.0\DisplayDigits.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\DisplayDigits\obj\Debug\net7.0\DisplayDigits.dll
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\DisplayDigits\obj\Debug\net7.0\refint\DisplayDigits.dll
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\DisplayDigits\obj\Debug\net7.0\DisplayDigits.pdb
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\DisplayDigits\obj\Debug\net7.0\DisplayDigits.genruntimeconfig.cache
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\DisplayDigits\obj\Debug\net7.0\ref\DisplayDigits.dll

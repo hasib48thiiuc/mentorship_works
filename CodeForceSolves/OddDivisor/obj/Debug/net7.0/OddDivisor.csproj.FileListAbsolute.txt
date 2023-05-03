@@ -1,0 +1,15 @@
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\OddDivisor\bin\Debug\net7.0\OddDivisor.exe
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\OddDivisor\bin\Debug\net7.0\OddDivisor.deps.json
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\OddDivisor\bin\Debug\net7.0\OddDivisor.runtimeconfig.json
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\OddDivisor\bin\Debug\net7.0\OddDivisor.dll
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\OddDivisor\bin\Debug\net7.0\OddDivisor.pdb
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\OddDivisor\obj\Debug\net7.0\OddDivisor.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\OddDivisor\obj\Debug\net7.0\OddDivisor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\OddDivisor\obj\Debug\net7.0\OddDivisor.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\OddDivisor\obj\Debug\net7.0\OddDivisor.AssemblyInfo.cs
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\OddDivisor\obj\Debug\net7.0\OddDivisor.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\OddDivisor\obj\Debug\net7.0\OddDivisor.dll
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\OddDivisor\obj\Debug\net7.0\refint\OddDivisor.dll
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\OddDivisor\obj\Debug\net7.0\OddDivisor.pdb
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\OddDivisor\obj\Debug\net7.0\OddDivisor.genruntimeconfig.cache
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\OddDivisor\obj\Debug\net7.0\ref\OddDivisor.dll

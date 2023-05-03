@@ -1,0 +1,15 @@
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\ICollectionInterface\bin\Debug\net7.0\ICollectionInterface.exe
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\ICollectionInterface\bin\Debug\net7.0\ICollectionInterface.deps.json
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\ICollectionInterface\bin\Debug\net7.0\ICollectionInterface.runtimeconfig.json
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\ICollectionInterface\bin\Debug\net7.0\ICollectionInterface.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\ICollectionInterface\bin\Debug\net7.0\ICollectionInterface.pdb
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\ICollectionInterface\obj\Debug\net7.0\ICollectionInterface.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\ICollectionInterface\obj\Debug\net7.0\ICollectionInterface.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\ICollectionInterface\obj\Debug\net7.0\ICollectionInterface.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\ICollectionInterface\obj\Debug\net7.0\ICollectionInterface.AssemblyInfo.cs
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\ICollectionInterface\obj\Debug\net7.0\ICollectionInterface.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\ICollectionInterface\obj\Debug\net7.0\ICollectionInterface.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\ICollectionInterface\obj\Debug\net7.0\refint\ICollectionInterface.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\ICollectionInterface\obj\Debug\net7.0\ICollectionInterface.pdb
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\ICollectionInterface\obj\Debug\net7.0\ICollectionInterface.genruntimeconfig.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\ICollectionInterface\obj\Debug\net7.0\ref\ICollectionInterface.dll

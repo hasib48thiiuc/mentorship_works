@@ -1,0 +1,15 @@
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\InterfaceP2\bin\Debug\net7.0\InterfaceP2.exe
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\InterfaceP2\bin\Debug\net7.0\InterfaceP2.deps.json
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\InterfaceP2\bin\Debug\net7.0\InterfaceP2.runtimeconfig.json
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\InterfaceP2\bin\Debug\net7.0\InterfaceP2.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\InterfaceP2\bin\Debug\net7.0\InterfaceP2.pdb
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\InterfaceP2\obj\Debug\net7.0\InterfaceP2.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\InterfaceP2\obj\Debug\net7.0\InterfaceP2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\InterfaceP2\obj\Debug\net7.0\InterfaceP2.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\InterfaceP2\obj\Debug\net7.0\InterfaceP2.AssemblyInfo.cs
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\InterfaceP2\obj\Debug\net7.0\InterfaceP2.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\InterfaceP2\obj\Debug\net7.0\InterfaceP2.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\InterfaceP2\obj\Debug\net7.0\refint\InterfaceP2.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\InterfaceP2\obj\Debug\net7.0\InterfaceP2.pdb
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\InterfaceP2\obj\Debug\net7.0\InterfaceP2.genruntimeconfig.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\InterfaceP2\obj\Debug\net7.0\ref\InterfaceP2.dll

@@ -1,0 +1,15 @@
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\GenericsExample\bin\Debug\net7.0\GenericsExample.exe
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\GenericsExample\bin\Debug\net7.0\GenericsExample.deps.json
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\GenericsExample\bin\Debug\net7.0\GenericsExample.runtimeconfig.json
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\GenericsExample\bin\Debug\net7.0\GenericsExample.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\GenericsExample\bin\Debug\net7.0\GenericsExample.pdb
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\GenericsExample\obj\Debug\net7.0\GenericsExample.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\GenericsExample\obj\Debug\net7.0\GenericsExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\GenericsExample\obj\Debug\net7.0\GenericsExample.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\GenericsExample\obj\Debug\net7.0\GenericsExample.AssemblyInfo.cs
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\GenericsExample\obj\Debug\net7.0\GenericsExample.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\GenericsExample\obj\Debug\net7.0\GenericsExample.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\GenericsExample\obj\Debug\net7.0\refint\GenericsExample.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\GenericsExample\obj\Debug\net7.0\GenericsExample.pdb
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\GenericsExample\obj\Debug\net7.0\GenericsExample.genruntimeconfig.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\GenericsExample\obj\Debug\net7.0\ref\GenericsExample.dll

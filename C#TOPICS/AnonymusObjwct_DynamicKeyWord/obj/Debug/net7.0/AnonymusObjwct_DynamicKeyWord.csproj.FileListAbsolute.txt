@@ -1,0 +1,15 @@
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\AnonymusObjwct_DynamicKeyWord\bin\Debug\net7.0\AnonymusObjwct_DynamicKeyWord.exe
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\AnonymusObjwct_DynamicKeyWord\bin\Debug\net7.0\AnonymusObjwct_DynamicKeyWord.deps.json
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\AnonymusObjwct_DynamicKeyWord\bin\Debug\net7.0\AnonymusObjwct_DynamicKeyWord.runtimeconfig.json
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\AnonymusObjwct_DynamicKeyWord\bin\Debug\net7.0\AnonymusObjwct_DynamicKeyWord.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\AnonymusObjwct_DynamicKeyWord\bin\Debug\net7.0\AnonymusObjwct_DynamicKeyWord.pdb
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\AnonymusObjwct_DynamicKeyWord\obj\Debug\net7.0\AnonymusObjwct_DynamicKeyWord.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\AnonymusObjwct_DynamicKeyWord\obj\Debug\net7.0\AnonymusObjwct_DynamicKeyWord.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\AnonymusObjwct_DynamicKeyWord\obj\Debug\net7.0\AnonymusObjwct_DynamicKeyWord.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\AnonymusObjwct_DynamicKeyWord\obj\Debug\net7.0\AnonymusObjwct_DynamicKeyWord.AssemblyInfo.cs
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\AnonymusObjwct_DynamicKeyWord\obj\Debug\net7.0\AnonymusObjwct_DynamicKeyWord.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\AnonymusObjwct_DynamicKeyWord\obj\Debug\net7.0\AnonymusObjwct_DynamicKeyWord.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\AnonymusObjwct_DynamicKeyWord\obj\Debug\net7.0\refint\AnonymusObjwct_DynamicKeyWord.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\AnonymusObjwct_DynamicKeyWord\obj\Debug\net7.0\AnonymusObjwct_DynamicKeyWord.pdb
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\AnonymusObjwct_DynamicKeyWord\obj\Debug\net7.0\AnonymusObjwct_DynamicKeyWord.genruntimeconfig.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\AnonymusObjwct_DynamicKeyWord\obj\Debug\net7.0\ref\AnonymusObjwct_DynamicKeyWord.dll

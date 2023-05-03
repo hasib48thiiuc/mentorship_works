@@ -1,0 +1,15 @@
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\MainakAndArray\bin\Debug\net7.0\MainakAndArray.exe
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\MainakAndArray\bin\Debug\net7.0\MainakAndArray.deps.json
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\MainakAndArray\bin\Debug\net7.0\MainakAndArray.runtimeconfig.json
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\MainakAndArray\bin\Debug\net7.0\MainakAndArray.dll
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\MainakAndArray\bin\Debug\net7.0\MainakAndArray.pdb
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\MainakAndArray\obj\Debug\net7.0\MainakAndArray.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\MainakAndArray\obj\Debug\net7.0\MainakAndArray.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\MainakAndArray\obj\Debug\net7.0\MainakAndArray.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\MainakAndArray\obj\Debug\net7.0\MainakAndArray.AssemblyInfo.cs
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\MainakAndArray\obj\Debug\net7.0\MainakAndArray.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\MainakAndArray\obj\Debug\net7.0\MainakAndArray.dll
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\MainakAndArray\obj\Debug\net7.0\refint\MainakAndArray.dll
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\MainakAndArray\obj\Debug\net7.0\MainakAndArray.pdb
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\MainakAndArray\obj\Debug\net7.0\MainakAndArray.genruntimeconfig.cache
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\MainakAndArray\obj\Debug\net7.0\ref\MainakAndArray.dll

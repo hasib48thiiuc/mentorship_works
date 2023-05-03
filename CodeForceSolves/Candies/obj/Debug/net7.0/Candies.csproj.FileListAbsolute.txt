@@ -1,0 +1,15 @@
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\Candies\bin\Debug\net7.0\Candies.exe
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\Candies\bin\Debug\net7.0\Candies.deps.json
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\Candies\bin\Debug\net7.0\Candies.runtimeconfig.json
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\Candies\bin\Debug\net7.0\Candies.dll
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\Candies\bin\Debug\net7.0\Candies.pdb
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\Candies\obj\Debug\net7.0\Candies.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\Candies\obj\Debug\net7.0\Candies.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\Candies\obj\Debug\net7.0\Candies.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\Candies\obj\Debug\net7.0\Candies.AssemblyInfo.cs
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\Candies\obj\Debug\net7.0\Candies.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\Candies\obj\Debug\net7.0\Candies.dll
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\Candies\obj\Debug\net7.0\refint\Candies.dll
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\Candies\obj\Debug\net7.0\Candies.pdb
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\Candies\obj\Debug\net7.0\Candies.genruntimeconfig.cache
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\Candies\obj\Debug\net7.0\ref\Candies.dll

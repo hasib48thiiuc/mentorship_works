@@ -1,0 +1,15 @@
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\DeleteFromTheLeft\bin\Debug\net7.0\DeleteFromTheLeft.exe
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\DeleteFromTheLeft\bin\Debug\net7.0\DeleteFromTheLeft.deps.json
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\DeleteFromTheLeft\bin\Debug\net7.0\DeleteFromTheLeft.runtimeconfig.json
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\DeleteFromTheLeft\bin\Debug\net7.0\DeleteFromTheLeft.dll
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\DeleteFromTheLeft\bin\Debug\net7.0\DeleteFromTheLeft.pdb
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\DeleteFromTheLeft\obj\Debug\net7.0\DeleteFromTheLeft.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\DeleteFromTheLeft\obj\Debug\net7.0\DeleteFromTheLeft.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\DeleteFromTheLeft\obj\Debug\net7.0\DeleteFromTheLeft.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\DeleteFromTheLeft\obj\Debug\net7.0\DeleteFromTheLeft.AssemblyInfo.cs
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\DeleteFromTheLeft\obj\Debug\net7.0\DeleteFromTheLeft.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\DeleteFromTheLeft\obj\Debug\net7.0\DeleteFromTheLeft.dll
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\DeleteFromTheLeft\obj\Debug\net7.0\refint\DeleteFromTheLeft.dll
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\DeleteFromTheLeft\obj\Debug\net7.0\DeleteFromTheLeft.pdb
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\DeleteFromTheLeft\obj\Debug\net7.0\DeleteFromTheLeft.genruntimeconfig.cache
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\DeleteFromTheLeft\obj\Debug\net7.0\ref\DeleteFromTheLeft.dll

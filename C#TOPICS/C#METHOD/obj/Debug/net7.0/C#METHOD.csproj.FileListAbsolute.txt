@@ -1,0 +1,15 @@
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\C#METHOD\bin\Debug\net7.0\C#METHOD.exe
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\C#METHOD\bin\Debug\net7.0\C#METHOD.deps.json
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\C#METHOD\bin\Debug\net7.0\C#METHOD.runtimeconfig.json
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\C#METHOD\bin\Debug\net7.0\C#METHOD.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\C#METHOD\bin\Debug\net7.0\C#METHOD.pdb
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\C#METHOD\obj\Debug\net7.0\C#METHOD.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\C#METHOD\obj\Debug\net7.0\C#METHOD.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\C#METHOD\obj\Debug\net7.0\C#METHOD.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\C#METHOD\obj\Debug\net7.0\C#METHOD.AssemblyInfo.cs
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\C#METHOD\obj\Debug\net7.0\C#METHOD.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\C#METHOD\obj\Debug\net7.0\C#METHOD.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\C#METHOD\obj\Debug\net7.0\refint\C#METHOD.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\C#METHOD\obj\Debug\net7.0\C#METHOD.pdb
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\C#METHOD\obj\Debug\net7.0\C#METHOD.genruntimeconfig.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\C#METHOD\obj\Debug\net7.0\ref\C#METHOD.dll

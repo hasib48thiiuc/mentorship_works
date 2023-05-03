@@ -1,0 +1,15 @@
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\LuckyNumbersCf\bin\Debug\net7.0\LuckyNumbersCf.exe
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\LuckyNumbersCf\bin\Debug\net7.0\LuckyNumbersCf.deps.json
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\LuckyNumbersCf\bin\Debug\net7.0\LuckyNumbersCf.runtimeconfig.json
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\LuckyNumbersCf\bin\Debug\net7.0\LuckyNumbersCf.dll
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\LuckyNumbersCf\bin\Debug\net7.0\LuckyNumbersCf.pdb
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\LuckyNumbersCf\obj\Debug\net7.0\LuckyNumbersCf.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\LuckyNumbersCf\obj\Debug\net7.0\LuckyNumbersCf.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\LuckyNumbersCf\obj\Debug\net7.0\LuckyNumbersCf.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\LuckyNumbersCf\obj\Debug\net7.0\LuckyNumbersCf.AssemblyInfo.cs
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\LuckyNumbersCf\obj\Debug\net7.0\LuckyNumbersCf.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\LuckyNumbersCf\obj\Debug\net7.0\LuckyNumbersCf.dll
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\LuckyNumbersCf\obj\Debug\net7.0\refint\LuckyNumbersCf.dll
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\LuckyNumbersCf\obj\Debug\net7.0\LuckyNumbersCf.pdb
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\LuckyNumbersCf\obj\Debug\net7.0\LuckyNumbersCf.genruntimeconfig.cache
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\LuckyNumbersCf\obj\Debug\net7.0\ref\LuckyNumbersCf.dll

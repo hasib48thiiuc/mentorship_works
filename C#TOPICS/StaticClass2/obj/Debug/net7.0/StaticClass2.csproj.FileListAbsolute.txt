@@ -1,0 +1,15 @@
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\StaticClass2\bin\Debug\net7.0\StaticClass2.exe
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\StaticClass2\bin\Debug\net7.0\StaticClass2.deps.json
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\StaticClass2\bin\Debug\net7.0\StaticClass2.runtimeconfig.json
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\StaticClass2\bin\Debug\net7.0\StaticClass2.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\StaticClass2\bin\Debug\net7.0\StaticClass2.pdb
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\StaticClass2\obj\Debug\net7.0\StaticClass2.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\StaticClass2\obj\Debug\net7.0\StaticClass2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\StaticClass2\obj\Debug\net7.0\StaticClass2.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\StaticClass2\obj\Debug\net7.0\StaticClass2.AssemblyInfo.cs
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\StaticClass2\obj\Debug\net7.0\StaticClass2.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\StaticClass2\obj\Debug\net7.0\StaticClass2.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\StaticClass2\obj\Debug\net7.0\refint\StaticClass2.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\StaticClass2\obj\Debug\net7.0\StaticClass2.pdb
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\StaticClass2\obj\Debug\net7.0\StaticClass2.genruntimeconfig.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\StaticClass2\obj\Debug\net7.0\ref\StaticClass2.dll

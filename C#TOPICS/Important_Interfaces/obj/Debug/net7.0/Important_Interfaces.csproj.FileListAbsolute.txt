@@ -1,0 +1,5 @@
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Important_Interfaces\obj\Debug\net7.0\Important_Interfaces.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Important_Interfaces\obj\Debug\net7.0\Important_Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Important_Interfaces\obj\Debug\net7.0\Important_Interfaces.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Important_Interfaces\obj\Debug\net7.0\Important_Interfaces.AssemblyInfo.cs
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Important_Interfaces\obj\Debug\net7.0\Important_Interfaces.csproj.CoreCompileInputs.cache

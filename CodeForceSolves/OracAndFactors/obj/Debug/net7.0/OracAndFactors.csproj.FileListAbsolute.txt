@@ -1,0 +1,15 @@
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\OracAndFactors\bin\Debug\net7.0\OracAndFactors.exe
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\OracAndFactors\bin\Debug\net7.0\OracAndFactors.deps.json
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\OracAndFactors\bin\Debug\net7.0\OracAndFactors.runtimeconfig.json
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\OracAndFactors\bin\Debug\net7.0\OracAndFactors.dll
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\OracAndFactors\bin\Debug\net7.0\OracAndFactors.pdb
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\OracAndFactors\obj\Debug\net7.0\OracAndFactors.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\OracAndFactors\obj\Debug\net7.0\OracAndFactors.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\OracAndFactors\obj\Debug\net7.0\OracAndFactors.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\OracAndFactors\obj\Debug\net7.0\OracAndFactors.AssemblyInfo.cs
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\OracAndFactors\obj\Debug\net7.0\OracAndFactors.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\OracAndFactors\obj\Debug\net7.0\OracAndFactors.dll
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\OracAndFactors\obj\Debug\net7.0\refint\OracAndFactors.dll
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\OracAndFactors\obj\Debug\net7.0\OracAndFactors.pdb
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\OracAndFactors\obj\Debug\net7.0\OracAndFactors.genruntimeconfig.cache
+C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\OracAndFactors\obj\Debug\net7.0\ref\OracAndFactors.dll

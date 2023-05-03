@@ -1,0 +1,15 @@
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\StaticClass1\bin\Debug\net7.0\StaticClass1.exe
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\StaticClass1\bin\Debug\net7.0\StaticClass1.deps.json
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\StaticClass1\bin\Debug\net7.0\StaticClass1.runtimeconfig.json
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\StaticClass1\bin\Debug\net7.0\StaticClass1.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\StaticClass1\bin\Debug\net7.0\StaticClass1.pdb
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\StaticClass1\obj\Debug\net7.0\StaticClass1.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\StaticClass1\obj\Debug\net7.0\StaticClass1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\StaticClass1\obj\Debug\net7.0\StaticClass1.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\StaticClass1\obj\Debug\net7.0\StaticClass1.AssemblyInfo.cs
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\StaticClass1\obj\Debug\net7.0\StaticClass1.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\StaticClass1\obj\Debug\net7.0\StaticClass1.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\StaticClass1\obj\Debug\net7.0\refint\StaticClass1.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\StaticClass1\obj\Debug\net7.0\StaticClass1.pdb
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\StaticClass1\obj\Debug\net7.0\StaticClass1.genruntimeconfig.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\StaticClass1\obj\Debug\net7.0\ref\StaticClass1.dll
