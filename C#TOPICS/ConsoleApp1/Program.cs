@@ -1,55 +1,56 @@
-﻿using System.Text;
+﻿using System;
+using System.Collections.Generic;
 
 int test = Convert.ToInt32(Console.ReadLine());
 
 while (test > 0)
 {
+    int m = Convert.ToInt32(Console.ReadLine());
+    SortedDictionary<int, List<string>> dic = new SortedDictionary<int, List<string>>();
 
-    string[] str2 = Console.ReadLine().Split(" ");
-    int n = int.Parse(str2[0]);
-
-    int m = int.Parse(str2[1]);
-
-    int s = int.Parse(str2[2]);
-    bool flag = false;
-    StringBuilder str1 = new StringBuilder();
-    string str = "abcdefghijklmnopqrstuvwxyz";
-    for (int i = 0; i < n; i++)
+    for (int x = 0; x < m; x++)
     {
-        str1.Append(str[i]);
-    }
-    char x=' ';
-    int coun = 0;
-    for (int i = 0; i < n-m+ 1; i++)
-    {
-        flag = false;
-        coun = 0;
-        for (int j = 0; j < m - 1; j++)
+        string[] str = Console.ReadLine().Split(" ");
+        int minutes = Convert.ToInt32(str[0]);
+        string skills = str[1];
+        if (dic.ContainsKey(minutes))
         {
-            if (str1[j] != str[j + 1] && coun < s)
-            {
-                if (j == 0)
-                    coun = coun + 2;
-                else coun++;
-            }
-            else if (str1[j] == str1[j + 1])
-            {
-
-            }
-            else
-            {
-                if (flag == false)
-                {
-                    x = str1[j + 1];
-                    flag = true;
-                }
-                str1[j]= x;
-            }
-
+            dic[minutes].Add(skills);
+        }
+        else
+        {
+            dic.Add(minutes, new List<string>() { skills });
         }
     }
-    Console.WriteLine(str1.ToString());
+    int sum = 0;
+    bool flag1 = true, flag2 = true;
 
+    foreach (var kvp in dic)
+    {
+        List<string> skillsList = kvp.Value;
+        foreach (string str in skillsList)
+        {
+            if (str[0] == '1' && flag1 == true)
+                flag1 = false;
+
+            if (str[1] == '1' && flag2 == true)
+                flag2 = false;
+        }
+        sum += kvp.Key * skillsList.Count;
+        if (flag1 == false && flag2 == false)
+        {
+            break;
+        }
+    }
+
+    if (flag1 == false && flag2 == false)
+    {
+        Console.WriteLine(sum);
+    }
+    else
+    {
+        Console.WriteLine("-1");
+    }
 
     test--;
 }

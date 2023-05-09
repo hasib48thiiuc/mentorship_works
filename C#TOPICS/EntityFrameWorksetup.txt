@@ -1,0 +1,15 @@
+
+
+
+
+
+
+Dotnet migration commands-
+
+*for adding migrations--
+1.dotnet ef migrations add Add'ClassName'Table --context 'xxxxxx' --project '-------'
+*for updating in database--
+2.dotnet ef database update --project 'xxxxxx' --context '----------'
+
+*for modifying a previously migrated table--
+dotnet ef migrations add Added'newcolumnname'InTheTableTable -context ..... --project ....

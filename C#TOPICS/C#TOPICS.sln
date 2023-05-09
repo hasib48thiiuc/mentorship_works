@@ -39,7 +39,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdoDotnet", "AdoDotnet\AdoD
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFramewrk", "EntityFramewrk\EntityFramewrk.csproj", "{508DBF4D-1669-4A41-AC12-6A66B3AD40FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity_FWork", "Entity_FWork\Entity_FWork.csproj", "{F9DCEF3F-3869-4396-9C2C-7A1EA5718FC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entity_FWork", "Entity_FWork\Entity_FWork.csproj", "{F9DCEF3F-3869-4396-9C2C-7A1EA5718FC7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D751EC72-83B4-46CE-A1EF-85076380D260}"
+	ProjectSection(SolutionItems) = preProject
+		EntityFrameWorksetup.txt = EntityFrameWorksetup.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
