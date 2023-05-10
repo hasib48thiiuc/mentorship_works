@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Entity_FWork.Migrations
 {
     [DbContext(typeof(TrainingDbContext))]
-    [Migration("20230509071200_AddTopicTable")]
+    [Migration("20230509073210_AddTopicTable")]
     partial class AddTopicTable
     {
         /// <inheritdoc />
@@ -74,6 +74,44 @@ namespace Entity_FWork.Migrations
                     b.HasKey("id");
 
                     b.ToTable("Main2Students");
+                });
+
+            modelBuilder.Entity("Entity_FWork.Topic", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CourseId");
+
+                    b.ToTable("Topics", (string)null);
+                });
+
+            modelBuilder.Entity("Entity_FWork.Topic", b =>
+                {
+                    b.HasOne("Entity_FWork.Course", "course")
+                        .WithMany("Topics")
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("course");
+                });
+
+            modelBuilder.Entity("Entity_FWork.Course", b =>
+                {
+                    b.Navigation("Topics");
                 });
 #pragma warning restore 612, 618
         }

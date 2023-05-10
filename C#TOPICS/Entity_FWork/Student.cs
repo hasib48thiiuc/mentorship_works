@@ -16,6 +16,7 @@ namespace Entity_FWork
         public DateTime DateOfReg { get; set; }
         public String address { get; set;}
 
-     
+        public List<CourseStudent> Courses { get; set; }
+
     }
 }

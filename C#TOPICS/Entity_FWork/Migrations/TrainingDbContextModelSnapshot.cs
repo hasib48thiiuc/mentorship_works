@@ -46,6 +46,24 @@ namespace Entity_FWork.Migrations
                     b.ToTable("Courses");
                 });
 
+            modelBuilder.Entity("Entity_FWork.CourseStudent", b =>
+                {
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("StudentId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CourseEnrollTime")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("CourseId", "StudentId");
+
+                    b.HasIndex("StudentId");
+
+                    b.ToTable("CourseStudents", (string)null);
+                });
+
             modelBuilder.Entity("Entity_FWork.Student", b =>
                 {
                     b.Property<int>("id")
@@ -71,6 +89,70 @@ namespace Entity_FWork.Migrations
                     b.HasKey("id");
 
                     b.ToTable("Main2Students");
+                });
+
+            modelBuilder.Entity("Entity_FWork.Topic", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CourseId");
+
+                    b.ToTable("Topics", (string)null);
+                });
+
+            modelBuilder.Entity("Entity_FWork.CourseStudent", b =>
+                {
+                    b.HasOne("Entity_FWork.Course", "course")
+                        .WithMany("Students")
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Entity_FWork.Student", "student")
+                        .WithMany("Courses")
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("course");
+
+                    b.Navigation("student");
+                });
+
+            modelBuilder.Entity("Entity_FWork.Topic", b =>
+                {
+                    b.HasOne("Entity_FWork.Course", "course")
+                        .WithMany("Topics")
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("course");
+                });
+
+            modelBuilder.Entity("Entity_FWork.Course", b =>
+                {
+                    b.Navigation("Students");
+
+                    b.Navigation("Topics");
+                });
+
+            modelBuilder.Entity("Entity_FWork.Student", b =>
+                {
+                    b.Navigation("Courses");
                 });
 #pragma warning restore 612, 618
         }

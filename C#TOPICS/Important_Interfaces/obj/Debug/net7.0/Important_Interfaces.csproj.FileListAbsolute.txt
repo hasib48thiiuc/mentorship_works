@@ -3,3 +3,13 @@ C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Important_Interfaces\obj\Debug\n
 C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Important_Interfaces\obj\Debug\net7.0\Important_Interfaces.AssemblyInfoInputs.cache
 C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Important_Interfaces\obj\Debug\net7.0\Important_Interfaces.AssemblyInfo.cs
 C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Important_Interfaces\obj\Debug\net7.0\Important_Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Important_Interfaces\bin\Debug\net7.0\Important_Interfaces.exe
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Important_Interfaces\bin\Debug\net7.0\Important_Interfaces.deps.json
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Important_Interfaces\bin\Debug\net7.0\Important_Interfaces.runtimeconfig.json
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Important_Interfaces\bin\Debug\net7.0\Important_Interfaces.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Important_Interfaces\bin\Debug\net7.0\Important_Interfaces.pdb
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Important_Interfaces\obj\Debug\net7.0\Important_Interfaces.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Important_Interfaces\obj\Debug\net7.0\refint\Important_Interfaces.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Important_Interfaces\obj\Debug\net7.0\Important_Interfaces.pdb
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Important_Interfaces\obj\Debug\net7.0\Important_Interfaces.genruntimeconfig.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Important_Interfaces\obj\Debug\net7.0\ref\Important_Interfaces.dll

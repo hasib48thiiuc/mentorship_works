@@ -8,7 +8,7 @@ namespace AbstractClass
 {
     public abstract class Vehicle
     {
-        HashSet<int> ke=new HashSet<int>();
+        HashSet<int> ke = new HashSet<int>();
         Dictionary<int, string> name = new Dictionary<int, string>();
         public int PassengerCount { get; set; }
         public double Speed { get; set; }
@@ -29,3 +29,4 @@ namespace AbstractClass
             fuel = amount;
         }
     }
+}

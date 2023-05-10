@@ -31,6 +31,31 @@ namespace Entity_FWork
             base.OnConfiguring(dbContextOptionsBuilder);
         }
 
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.Entity<Topic>().ToTable("Topics");
+
+            builder.Entity<CourseStudent>().ToTable("CourseStudents");
+
+            builder.Entity<CourseStudent>().HasKey(cs => new { cs.CourseId, cs.StudentId });
+
+            builder.Entity<Course>().
+                HasMany(p => p.Topics).WithOne
+                (i => i.course);
+
+            builder.Entity<CourseStudent>().
+                HasOne(a => a.course).
+                WithMany(b => b.Students).
+                HasForeignKey(c => c.CourseId);
+
+            builder.Entity<CourseStudent>().
+                HasOne(x => x.student).WithMany
+                (y => y.Courses).HasForeignKey(pc => pc.StudentId);
+
+            base.OnModelCreating(builder);
+
+        }
+
 
 
 

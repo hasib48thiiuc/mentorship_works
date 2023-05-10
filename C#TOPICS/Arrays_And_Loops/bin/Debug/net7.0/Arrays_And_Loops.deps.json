@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Arrays_And_Loops/1.0.0": {
+        "runtime": {
+          "Arrays_And_Loops.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Arrays_And_Loops/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

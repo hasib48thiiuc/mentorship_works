@@ -23,9 +23,9 @@ do
 
 } while (num2 > 0);
 
-foreach (int age in ages)
+foreach (int ae in ages)
 {
-    Console.WriteLine(age);
+    Console.WriteLine(ae);
 }
 
 int[] age = new int[20];

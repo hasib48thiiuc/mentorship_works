@@ -3,3 +3,13 @@ C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Arrays_And_Loops\obj\Debug\net7.
 C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Arrays_And_Loops\obj\Debug\net7.0\Arrays_And_Loops.AssemblyInfoInputs.cache
 C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Arrays_And_Loops\obj\Debug\net7.0\Arrays_And_Loops.AssemblyInfo.cs
 C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Arrays_And_Loops\obj\Debug\net7.0\Arrays_And_Loops.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Arrays_And_Loops\bin\Debug\net7.0\Arrays_And_Loops.exe
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Arrays_And_Loops\bin\Debug\net7.0\Arrays_And_Loops.deps.json
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Arrays_And_Loops\bin\Debug\net7.0\Arrays_And_Loops.runtimeconfig.json
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Arrays_And_Loops\bin\Debug\net7.0\Arrays_And_Loops.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Arrays_And_Loops\bin\Debug\net7.0\Arrays_And_Loops.pdb
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Arrays_And_Loops\obj\Debug\net7.0\Arrays_And_Loops.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Arrays_And_Loops\obj\Debug\net7.0\refint\Arrays_And_Loops.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Arrays_And_Loops\obj\Debug\net7.0\Arrays_And_Loops.pdb
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Arrays_And_Loops\obj\Debug\net7.0\Arrays_And_Loops.genruntimeconfig.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Arrays_And_Loops\obj\Debug\net7.0\ref\Arrays_And_Loops.dll

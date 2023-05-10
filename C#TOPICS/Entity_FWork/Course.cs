@@ -15,6 +15,10 @@ namespace Entity_FWork
         public string Fee { get; set;}
 
         public DateTime ClassStartTime { get; set; }
+
+        public List<Topic> Topics { get; set; }
+
+        public List<CourseStudent> Students { get; set; }
     }
 
 }
