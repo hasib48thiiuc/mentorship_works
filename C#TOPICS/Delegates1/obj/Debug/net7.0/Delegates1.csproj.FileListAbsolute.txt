@@ -1,0 +1,15 @@
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Delegates1\bin\Debug\net7.0\Delegates1.exe
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Delegates1\bin\Debug\net7.0\Delegates1.deps.json
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Delegates1\bin\Debug\net7.0\Delegates1.runtimeconfig.json
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Delegates1\bin\Debug\net7.0\Delegates1.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Delegates1\bin\Debug\net7.0\Delegates1.pdb
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Delegates1\obj\Debug\net7.0\Delegates1.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Delegates1\obj\Debug\net7.0\Delegates1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Delegates1\obj\Debug\net7.0\Delegates1.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Delegates1\obj\Debug\net7.0\Delegates1.AssemblyInfo.cs
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Delegates1\obj\Debug\net7.0\Delegates1.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Delegates1\obj\Debug\net7.0\Delegates1.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Delegates1\obj\Debug\net7.0\refint\Delegates1.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Delegates1\obj\Debug\net7.0\Delegates1.pdb
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Delegates1\obj\Debug\net7.0\Delegates1.genruntimeconfig.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Delegates1\obj\Debug\net7.0\ref\Delegates1.dll

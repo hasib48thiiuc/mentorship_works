@@ -1,0 +1,15 @@
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\FileOperation\bin\Debug\net7.0\FileOperation.exe
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\FileOperation\bin\Debug\net7.0\FileOperation.deps.json
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\FileOperation\bin\Debug\net7.0\FileOperation.runtimeconfig.json
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\FileOperation\bin\Debug\net7.0\FileOperation.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\FileOperation\bin\Debug\net7.0\FileOperation.pdb
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\FileOperation\obj\Debug\net7.0\FileOperation.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\FileOperation\obj\Debug\net7.0\FileOperation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\FileOperation\obj\Debug\net7.0\FileOperation.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\FileOperation\obj\Debug\net7.0\FileOperation.AssemblyInfo.cs
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\FileOperation\obj\Debug\net7.0\FileOperation.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\FileOperation\obj\Debug\net7.0\FileOperation.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\FileOperation\obj\Debug\net7.0\refint\FileOperation.dll
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\FileOperation\obj\Debug\net7.0\FileOperation.pdb
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\FileOperation\obj\Debug\net7.0\FileOperation.genruntimeconfig.cache
+C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\FileOperation\obj\Debug\net7.0\ref\FileOperation.dll
