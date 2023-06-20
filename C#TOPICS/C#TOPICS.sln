@@ -56,6 +56,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reflection", "Reflection\Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflection_", "Reflection_\Reflection_.csproj", "{2F35EB86-4881-486F-A3EF-C88DCE737F17}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncExample", "AsyncExample\AsyncExample.csproj", "{E69525B5-7A89-435D-8384-7342FC53090B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -158,6 +160,10 @@ Global
 		{2F35EB86-4881-486F-A3EF-C88DCE737F17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F35EB86-4881-486F-A3EF-C88DCE737F17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F35EB86-4881-486F-A3EF-C88DCE737F17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E69525B5-7A89-435D-8384-7342FC53090B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E69525B5-7A89-435D-8384-7342FC53090B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E69525B5-7A89-435D-8384-7342FC53090B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E69525B5-7A89-435D-8384-7342FC53090B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
