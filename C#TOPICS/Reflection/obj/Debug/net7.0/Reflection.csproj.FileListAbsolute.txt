@@ -1,0 +1,15 @@
+F:\mentorship_works\C#TOPICS\Reflection\bin\Debug\net7.0\Reflection.exe
+F:\mentorship_works\C#TOPICS\Reflection\bin\Debug\net7.0\Reflection.deps.json
+F:\mentorship_works\C#TOPICS\Reflection\bin\Debug\net7.0\Reflection.runtimeconfig.json
+F:\mentorship_works\C#TOPICS\Reflection\bin\Debug\net7.0\Reflection.dll
+F:\mentorship_works\C#TOPICS\Reflection\bin\Debug\net7.0\Reflection.pdb
+F:\mentorship_works\C#TOPICS\Reflection\obj\Debug\net7.0\Reflection.csproj.AssemblyReference.cache
+F:\mentorship_works\C#TOPICS\Reflection\obj\Debug\net7.0\Reflection.GeneratedMSBuildEditorConfig.editorconfig
+F:\mentorship_works\C#TOPICS\Reflection\obj\Debug\net7.0\Reflection.AssemblyInfoInputs.cache
+F:\mentorship_works\C#TOPICS\Reflection\obj\Debug\net7.0\Reflection.AssemblyInfo.cs
+F:\mentorship_works\C#TOPICS\Reflection\obj\Debug\net7.0\Reflection.csproj.CoreCompileInputs.cache
+F:\mentorship_works\C#TOPICS\Reflection\obj\Debug\net7.0\Reflection.dll
+F:\mentorship_works\C#TOPICS\Reflection\obj\Debug\net7.0\refint\Reflection.dll
+F:\mentorship_works\C#TOPICS\Reflection\obj\Debug\net7.0\Reflection.pdb
+F:\mentorship_works\C#TOPICS\Reflection\obj\Debug\net7.0\Reflection.genruntimeconfig.cache
+F:\mentorship_works\C#TOPICS\Reflection\obj\Debug\net7.0\ref\Reflection.dll

@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL\\Desktop\\mentorship_works\\C#TOPICS\\StaticClass2\\StaticClass2.csproj": {}
+    "F:\\mentorship_works\\C#TOPICS\\StaticClass2\\StaticClass2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL\\Desktop\\mentorship_works\\C#TOPICS\\StaticClass2\\StaticClass2.csproj": {
+    "F:\\mentorship_works\\C#TOPICS\\StaticClass2\\StaticClass2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\mentorship_works\\C#TOPICS\\StaticClass2\\StaticClass2.csproj",
+        "projectUniqueName": "F:\\mentorship_works\\C#TOPICS\\StaticClass2\\StaticClass2.csproj",
         "projectName": "StaticClass2",
-        "projectPath": "C:\\Users\\DELL\\Desktop\\mentorship_works\\C#TOPICS\\StaticClass2\\StaticClass2.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Desktop\\mentorship_works\\C#TOPICS\\StaticClass2\\obj\\",
+        "projectPath": "F:\\mentorship_works\\C#TOPICS\\StaticClass2\\StaticClass2.csproj",
+        "packagesPath": "C:\\Users\\titon\\.nuget\\packages\\",
+        "outputPath": "F:\\mentorship_works\\C#TOPICS\\StaticClass2\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\titon\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -59,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

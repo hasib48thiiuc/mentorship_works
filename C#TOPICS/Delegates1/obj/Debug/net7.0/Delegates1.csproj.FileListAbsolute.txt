@@ -13,3 +13,11 @@ C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Delegates1\obj\Debug\net7.0\refi
 C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Delegates1\obj\Debug\net7.0\Delegates1.pdb
 C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Delegates1\obj\Debug\net7.0\Delegates1.genruntimeconfig.cache
 C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\Delegates1\obj\Debug\net7.0\ref\Delegates1.dll
+F:\mentorship_works\C#TOPICS\Delegates1\obj\Debug\net7.0\Delegates1.csproj.AssemblyReference.cache
+F:\mentorship_works\C#TOPICS\Delegates1\obj\Debug\net7.0\Delegates1.GeneratedMSBuildEditorConfig.editorconfig
+F:\mentorship_works\C#TOPICS\Delegates1\obj\Debug\net7.0\Delegates1.AssemblyInfoInputs.cache
+F:\mentorship_works\C#TOPICS\Delegates1\obj\Debug\net7.0\Delegates1.AssemblyInfo.cs
+F:\mentorship_works\C#TOPICS\Delegates1\obj\Debug\net7.0\Delegates1.csproj.CoreCompileInputs.cache
+F:\mentorship_works\C#TOPICS\Delegates1\obj\Debug\net7.0\Delegates1.dll
+F:\mentorship_works\C#TOPICS\Delegates1\obj\Debug\net7.0\refint\Delegates1.dll
+F:\mentorship_works\C#TOPICS\Delegates1\obj\Debug\net7.0\Delegates1.pdb
