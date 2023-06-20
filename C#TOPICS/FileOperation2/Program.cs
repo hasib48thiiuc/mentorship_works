@@ -1,7 +1,4 @@
-﻿using Microsoft.VisualBasic;
-using System.Text;
-
-/*
+﻿/*
  
 File
 FileInfo
@@ -37,20 +34,20 @@ if(file.Exists)
 /*Directory.CreateDirectory(@"C:\Users\DELL\Desktop\mentorship_works\C#TOPICS\FileOperation2\New Folder");  
 Console.WriteLine(Directory.GetCurrentDirectory());*/
 
-string crrntdrct=Directory.GetCurrentDirectory();
+string crrntdrct = Directory.GetCurrentDirectory();
 
-DirectoryInfo dinfo=new DirectoryInfo(crrntdrct);
+DirectoryInfo dinfo = new DirectoryInfo(crrntdrct);
 
-FileInfo[] files=dinfo.Parent.Parent.Parent.GetFiles();
+FileInfo[] files = dinfo.Parent.Parent.Parent.GetFiles();
 
-foreach(FileInfo file in files)
+foreach (FileInfo file in files)
 {
     Console.WriteLine(file.Name);
 }
 
-var folders = dinfo.Parent.Parent.Parent.GetDirectories() ;
+var folders = dinfo.Parent.Parent.Parent.GetDirectories();
 
-foreach(var folder in folders)
+foreach (var folder in folders)
 {
     Console.WriteLine(folder.Name);
 }

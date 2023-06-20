@@ -11,26 +11,26 @@ namespace Reflection_
 
             Type t2 = item.GetType();
 
-            ConstructorInfo constructor= t1.GetConstructor(new Type[] { });
-            object result=constructor.Invoke(new object[] { });
+            ConstructorInfo constructor = t1.GetConstructor(new Type[] { });
+            object result = constructor.Invoke(new object[] { });
 
-           PropertyInfo[] t2prprties = t2.GetProperties();
+            PropertyInfo[] t2prprties = t2.GetProperties();
 
-           PropertyInfo[] t1prprties = t1.GetProperties();
+            PropertyInfo[] t1prprties = t1.GetProperties();
 
-            foreach(PropertyInfo pi in t2prprties)
+            foreach (PropertyInfo pi in t2prprties)
             {
-                foreach(PropertyInfo p1 in t1prprties)
+                foreach (PropertyInfo p1 in t1prprties)
                 {
-                    if(pi.Name == p1.Name)
+                    if (pi.Name == p1.Name)
                     {
                         p1.SetValue(result, pi.GetValue(item));
                     }
                 }
             }
             return (T)result;
-              
 
-        }   
+
+        }
     }
 }

@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace C_OOP
+﻿namespace C_OOP
 {
-    public  class Dice
+    public class Dice
     {
         public int[] Sides { get; protected set; }
         public int FaceValue { get; protected set; }

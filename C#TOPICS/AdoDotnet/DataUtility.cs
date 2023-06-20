@@ -1,23 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data.SqlClient;
 
 namespace AdoDotnet
 {
-    public  class DataUtility
+    public class DataUtility
     {
         private string _connectionstring;
 
-        public DataUtility( string connectionstring)
+        public DataUtility(string connectionstring)
         {
             _connectionstring = connectionstring;
 
         }
 
-        private SqlCommand CreateCommand(string sql )
+        private SqlCommand CreateCommand(string sql)
         {
 
             SqlConnection connection = new SqlConnection(_connectionstring);
@@ -34,19 +29,19 @@ namespace AdoDotnet
         public void AddData(string sql)
         {
 
-            using var command=CreateCommand(sql);
+            using var command = CreateCommand(sql);
 
-                command.ExecuteNonQuery();
+            command.ExecuteNonQuery();
 
         }
 
-        public List<Dictionary<string,object>> GetData(string query)
+        public List<Dictionary<string, object>> GetData(string query)
         {
             using var command = CreateCommand(query);
 
-            List<Dictionary<string,object>> values= new List<Dictionary<string,object>>();
+            List<Dictionary<string, object>> values = new List<Dictionary<string, object>>();
 
-            using  SqlDataReader  reader=command.ExecuteReader();
+            using SqlDataReader reader = command.ExecuteReader();
 
             while (reader.Read())
             {

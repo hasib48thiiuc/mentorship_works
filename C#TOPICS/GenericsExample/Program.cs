@@ -1,7 +1,7 @@
 ﻿
 using GenericsExample;
 
-Coordinate<string,int> st1=new Coordinate<string,int>();
+Coordinate<string, int> st1 = new Coordinate<string, int>();
 
 st1.Name = "sumi";
 st1.Roll = 1;

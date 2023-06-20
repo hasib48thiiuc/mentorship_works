@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Entity_FWork
+﻿namespace Entity_FWork
 {
-   public class Student
+    public class Student
     {
         public int id { get; set; }
         public String Name { get; set; }
@@ -14,7 +8,7 @@ namespace Entity_FWork
         public int roll { get; set; }
 
         public DateTime DateOfReg { get; set; }
-        public String address { get; set;}
+        public String address { get; set; }
 
         public List<CourseStudent> Courses { get; set; }
 

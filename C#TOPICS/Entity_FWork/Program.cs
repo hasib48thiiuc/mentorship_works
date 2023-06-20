@@ -1,7 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Entity_FWork;
-using Microsoft.EntityFrameworkCore;
-using System.Runtime.CompilerServices;
 
 Console.WriteLine("Hello, World!");
 
@@ -54,8 +52,8 @@ exist5.Courses = new List<CourseStudent>
 };
 con1.SaveChanges();
 */
-CourseStudent cs1= new CourseStudent();
-cs1.course=con1.Courses.Where(x=>x.Id==4).FirstOrDefault();
+CourseStudent cs1 = new CourseStudent();
+cs1.course = con1.Courses.Where(x => x.Id == 4).FirstOrDefault();
 cs1.CourseEnrollTime = DateTime.Now;
 exist5.Courses = new List<CourseStudent>();
 exist5.Courses.Add(cs1);

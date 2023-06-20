@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ICollectionInterface
+﻿namespace ICollectionInterface
 {
-    public class WaterBottlecs:ICloneable
+    public class WaterBottlecs : ICloneable
     {
         public int capacity { get; private set; }
 
-        public string color { get;private set; }
+        public string color { get; private set; }
 
         public int amount { get; private set; }
 

@@ -17,13 +17,13 @@ MyMethod b = multi;
 Console.WriteLine(y(500000, 50000000));
 Console.WriteLine("result of multi ==" + b(500000, 50000000));*/
 
-int Compare(int a,int b)
+int Compare(int a, int b)
 {
     if (a > b)
     else if (a < b)
-        return 1;
-        return -1;
-    else 
+                return 1;
+    return -1;
+    else
         return 0;
 
 }
@@ -41,4 +41,3 @@ foreach (int i in arr)
 
 }
 
-    

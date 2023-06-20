@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace C_OOP
+﻿namespace C_OOP
 {
-    public class EightSidedDice:Dice
+    public class EightSidedDice : Dice
     {
         public EightSidedDice()
         {
