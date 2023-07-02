@@ -1,5 +1,0 @@
-C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\StringCons\obj\Debug\net7.0\StringCons.csproj.AssemblyReference.cache
-C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\StringCons\obj\Debug\net7.0\StringCons.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\StringCons\obj\Debug\net7.0\StringCons.AssemblyInfoInputs.cache
-C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\StringCons\obj\Debug\net7.0\StringCons.AssemblyInfo.cs
-C:\Users\DELL\Desktop\mentorship_works\CodeForceSolves\StringCons\obj\Debug\net7.0\StringCons.csproj.CoreCompileInputs.cache

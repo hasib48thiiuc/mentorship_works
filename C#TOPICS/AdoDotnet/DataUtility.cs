@@ -5,7 +5,7 @@ namespace AdoDotnet
     public class DataUtility
     {
         private string _connectionstring;
-
+        ]
         public DataUtility(string connectionstring)
         {
             _connectionstring = connectionstring;

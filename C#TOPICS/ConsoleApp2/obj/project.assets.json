@@ -1142,7 +1142,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\titon\\.nuget\\packages\\": {}
+    "C:\\Users\\titon\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
@@ -1153,6 +1154,9 @@
       "packagesPath": "C:\\Users\\titon\\.nuget\\packages\\",
       "outputPath": "F:\\mentorship_works\\C#TOPICS\\ConsoleApp2\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
         "C:\\Users\\titon\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
