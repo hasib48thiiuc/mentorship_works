@@ -1,0 +1,133 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = StockManagementSystem
+build_property.RootNamespace = StockManagementSystem
+build_property.ProjectDir = C:\mentorship_works\StockManagementSystem\StockManagementSystem\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\mentorship_works\StockManagementSystem\StockManagementSystem
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/mentorship_works/StockManagementSystem/StockManagementSystem/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/mentorship_works/StockManagementSystem/StockManagementSystem/Areas/StockManager/Views/Category/AddCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3RvY2tNYW5hZ2VyXFZpZXdzXENhdGVnb3J5XEFkZENhdGVnb3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/mentorship_works/StockManagementSystem/StockManagementSystem/Areas/StockManager/Views/Category/EditCategoryName.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3RvY2tNYW5hZ2VyXFZpZXdzXENhdGVnb3J5XEVkaXRDYXRlZ29yeU5hbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/mentorship_works/StockManagementSystem/StockManagementSystem/Areas/StockManager/Views/Company/AddCompanyName.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3RvY2tNYW5hZ2VyXFZpZXdzXENvbXBhbnlcQWRkQ29tcGFueU5hbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/mentorship_works/StockManagementSystem/StockManagementSystem/Areas/StockManager/Views/Company/EditCompanyName.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3RvY2tNYW5hZ2VyXFZpZXdzXENvbXBhbnlcRWRpdENvbXBhbnlOYW1lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/mentorship_works/StockManagementSystem/StockManagementSystem/Areas/StockManager/Views/Company/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3RvY2tNYW5hZ2VyXFZpZXdzXENvbXBhbnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/mentorship_works/StockManagementSystem/StockManagementSystem/Areas/StockManager/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3RvY2tNYW5hZ2VyXFZpZXdzXEhvbWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/mentorship_works/StockManagementSystem/StockManagementSystem/Areas/StockManager/Views/Item/AddItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3RvY2tNYW5hZ2VyXFZpZXdzXEl0ZW1cQWRkSXRlbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/mentorship_works/StockManagementSystem/StockManagementSystem/Areas/StockManager/Views/Item/EditItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3RvY2tNYW5hZ2VyXFZpZXdzXEl0ZW1cRWRpdEl0ZW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/mentorship_works/StockManagementSystem/StockManagementSystem/Areas/StockManager/Views/Item/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3RvY2tNYW5hZ2VyXFZpZXdzXEl0ZW1cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/mentorship_works/StockManagementSystem/StockManagementSystem/Areas/StockManager/Views/Item/ShowItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3RvY2tNYW5hZ2VyXFZpZXdzXEl0ZW1cU2hvd0l0ZW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/mentorship_works/StockManagementSystem/StockManagementSystem/Areas/StockManager/Views/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3RvY2tNYW5hZ2VyXFZpZXdzXFZpZXdzXEhvbWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/mentorship_works/StockManagementSystem/StockManagementSystem/Areas/StockManager/Views/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3RvY2tNYW5hZ2VyXFZpZXdzXFZpZXdzXEhvbWVcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/mentorship_works/StockManagementSystem/StockManagementSystem/Areas/StockManager/Views/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3RvY2tNYW5hZ2VyXFZpZXdzXFZpZXdzXFNoYXJlZFxFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/mentorship_works/StockManagementSystem/StockManagementSystem/Areas/StockManager/Views/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3RvY2tNYW5hZ2VyXFZpZXdzXFZpZXdzXFNoYXJlZFxfTG9naW5QYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/mentorship_works/StockManagementSystem/StockManagementSystem/Areas/StockManager/Views/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3RvY2tNYW5hZ2VyXFZpZXdzXFZpZXdzXFNoYXJlZFxfVmFsaWRhdGlvblNjcmlwdHNQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/mentorship_works/StockManagementSystem/StockManagementSystem/Areas/StockManager/Views/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3RvY2tNYW5hZ2VyXFZpZXdzXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/mentorship_works/StockManagementSystem/StockManagementSystem/Areas/StockManager/Views/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3RvY2tNYW5hZ2VyXFZpZXdzXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/mentorship_works/StockManagementSystem/StockManagementSystem/Areas/StockManager/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3RvY2tNYW5hZ2VyXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/mentorship_works/StockManagementSystem/StockManagementSystem/Areas/StockManager/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3RvY2tNYW5hZ2VyXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/mentorship_works/StockManagementSystem/StockManagementSystem/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/mentorship_works/StockManagementSystem/StockManagementSystem/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/mentorship_works/StockManagementSystem/StockManagementSystem/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/mentorship_works/StockManagementSystem/StockManagementSystem/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/mentorship_works/StockManagementSystem/StockManagementSystem/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/mentorship_works/StockManagementSystem/StockManagementSystem/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/mentorship_works/StockManagementSystem/StockManagementSystem/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/mentorship_works/StockManagementSystem/StockManagementSystem/Areas/StockManager/Views/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3RvY2tNYW5hZ2VyXFZpZXdzXFZpZXdzXFNoYXJlZFxfTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-w7jqbk6gwq
+
+[C:/mentorship_works/StockManagementSystem/StockManagementSystem/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-4tvebm3bcb

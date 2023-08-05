@@ -1,0 +1,34 @@
+﻿@model ItemCreateModel
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+<h3 class="card-title">Create Item For Inventory</h3>
+              
+<!-- /.card-header -->
+<!-- form start -->
+<form role="form" asp-antiforgery="true" asp-action="Create" asp-area="Manager"
+        asp-controller="Inven_"  method="post" >
+    <div class="card-body">
+        <div class="form-group">
+            <label asp-for="Name" >Item Name</label>
+          <input type="text" class="form-control" asp-for="Name" placeholder="Enter Item">
+        </div>
+        <div class="form-group">
+            <label asp-for="Price">Item Price</label>
+            <input type="text" class="form-control" asp-for="Price" placeholder="Price">
+        </div>
+        <div class="form-group">
+            <label asp-for="Quantity">Item Quantity</label>
+            <input type="text" class="form-control" asp-for="Quantity" placeholder="Item Quantity">
+        </div>
+
+    </div>
+ 
+    <div class="card-footer">
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+            

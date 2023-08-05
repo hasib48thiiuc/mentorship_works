@@ -1,0 +1,66 @@
+﻿@model InventoryManagement.Models.Domain.Item
+
+@{
+    ViewData["Title"] = "EditItem";
+}
+
+
+
+<div class="mt-2 " style="width:50%">
+   
+    <form asp-action="EditItem">
+           
+        <input asp-for="Id" type="hidden" class="form-control" />
+
+        
+        <div class="mb-3">
+         
+            <label asp-for="Name" class="form-label">Name</label>
+
+
+            <input asp-for="Name" type="text" class="form-control">
+
+          
+            <span class="text-danger" asp-validation-for="Name">
+          
+            </span>
+
+
+      
+        </div>
+      
+        <div class="mb-3">
+         
+            <label asp-for="Price" class="form-label">Price</label>
+
+           
+            <input asp-for="Price" type="text" class="form-control">
+           
+            <span class="text-danger" asp-validation-for="Price">
+            </span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Quantity" class="form-label">Quantity</label>
+
+            <input asp-for="Quantity" type="text" class="form-control">
+            <span class="text-danger" asp-validation-for="Quantity">
+            </span>
+        </div>
+
+        @if (TempData["msg"] != null)
+        {
+            <div class="mb-3">
+                @TempData["msg"]
+            </div>
+        }
+
+        <button type="submit" class="btn btn-primary">Update</button>
+
+        <a href="/Item/ShowItem" class="btn btn-primary">Back</a>
+
+
+
+    </form>
+
+</div>

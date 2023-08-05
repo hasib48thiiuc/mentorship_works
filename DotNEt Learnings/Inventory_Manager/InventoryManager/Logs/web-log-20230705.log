@@ -1,0 +1,43 @@
+2023-07-05 02:14:44.364 +06:00 [INF] THE Application Starts here
+2023-07-05 02:28:09.471 +06:00 [INF] THE Application Starts here
+2023-07-05 02:35:25.000 +06:00 [ERR] The view 'Index' was not found. Searched locations: ["/Areas/Manager/Views/Main/Index.cshtml","/Areas/Manager/Views/Shared/Index.cshtml","/Views/Shared/Index.cshtml","/Pages/Shared/Index.cshtml"]
+2023-07-05 02:35:25.068 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The view 'Index' was not found. The following locations were searched:
+/Areas/Manager/Views/Main/Index.cshtml
+/Areas/Manager/Views/Shared/Index.cshtml
+/Views/Shared/Index.cshtml
+/Pages/Shared/Index.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-07-05 02:40:16.532 +06:00 [INF] THE Application Starts here
+2023-07-05 02:42:01.799 +06:00 [INF] THE Application Starts here
+2023-07-05 02:54:12.791 +06:00 [INF] THE Application Starts here
+2023-07-05 02:55:23.958 +06:00 [INF] THE Application Starts here
+2023-07-05 03:14:33.387 +06:00 [INF] THE Application Starts here
+2023-07-05 09:51:00.440 +06:00 [INF] THE Application Starts here
+2023-07-05 10:13:27.193 +06:00 [INF] THE Application Starts here
+2023-07-05 10:15:35.191 +06:00 [INF] THE Application Starts here
+2023-07-05 11:15:04.646 +06:00 [INF] THE Application Starts here
+2023-07-05 11:42:53.579 +06:00 [INF] THE Application Starts here
+2023-07-05 12:41:25.202 +06:00 [INF] THE Application Starts here
+2023-07-05 14:00:49.264 +06:00 [INF] THE Application Starts here
+2023-07-05 14:13:18.268 +06:00 [INF] THE Application Starts here
+2023-07-05 14:17:25.516 +06:00 [INF] THE Application Starts here
+2023-07-05 14:41:15.661 +06:00 [INF] THE Application Starts here

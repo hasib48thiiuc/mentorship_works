@@ -1,0 +1,87 @@
+﻿@using StockManagementSystem.Models.Domain;
+
+
+@model StockManagementSystem.Models.Domain.Item
+@{
+    IEnumerable<Company>? comps = ViewData["comps"] as IEnumerable<Company>;
+
+    IEnumerable<Category>? categories = ViewData["Category"] as IEnumerable<Category>;
+
+    ViewData["Title"] = "Add Item";
+}
+
+<h1>AddItem</h1>
+
+<div class="mt-2 " style="width:50%">
+    <form asp-action="AddItem">
+
+        <div class="mb-3">
+            <label asp-for="Name" class="form-label"></label>
+
+            <input asp-for="Name" type="text" class="form-control">
+
+            <span class="text-danger" asp-validation-for="Name">
+            </span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="Quantity" class="form-label"></label>
+
+            <input asp-for="Quantity" type="text" class="form-control">
+
+            <span class="text-danger" asp-validation-for="Quantity">
+            </span>
+
+        </div>
+
+
+        <label asp-for="CompanyID" class="mb-1" for="company">Company</label>
+
+        <select class="form-select mt-2" id="company" asp-for="CompanyID">
+
+
+@*            <option selected asp-for="CompanyID"></option>
+*@            @foreach(var item in comps)
+            {
+                <option asp-for="CompanyID" value="@item.Id">@item.Name</option>
+            }
+        </select>
+
+        <label asp-for="CategoryId" for="category" class="mb-1 mt-2">Category</label>
+
+        <select class="form-select mt-2" id="category" asp-for="CategoryId">
+@*            //<option selected asp-for="CategoryId"></option>
+*@            @foreach (var item2 in categories)
+            {
+                <option asp-for="CategoryId" value="@item2.Id">@item2.Name</option>
+            }
+        </select>
+
+        <div class="mb-3 mt-2">
+            <label asp-for="ReOrderLevel" class="form-label"></label>
+
+            <input asp-for="ReOrderLevel" type="number" value="0" class="form-control">
+
+            <span class="text-danger" asp-validation-for="ReOrderLevel">
+            </span>
+
+        </div>
+
+  @*//   <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown Button
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        @foreach (var item in comps)
+        {1 
+        <a class="dropdown-item" href="">@item.Name</a>
+        }
+            </div>
+        </div>
+     *@
+        <button type="submit" class="btn btn-primary mt-2 mb-10" >Submit</button>
+
+    </form>
+
+
+</div>

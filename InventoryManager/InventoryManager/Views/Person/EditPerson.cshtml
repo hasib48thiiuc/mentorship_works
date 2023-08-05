@@ -1,0 +1,46 @@
+﻿@model InventoryManager.Models.Domain.Person
+
+@{
+
+            //   Layout = "_Layout";
+}
+
+<div class="mt-2" style="width:50%">
+    <form asp-action="EditPerson">
+         <h1>
+            Edit Person
+         </h1>
+          <input asp-for="Id" type="hidden" class="form-control" />
+        <div class="mb-3">
+            <label asp-for="Name" class="form-label">Name</label>
+
+            <input asp-for="Name" type="text" class="form-control">
+
+            <span class="text-danger" asp-validation-for="Name">
+            </span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="Email" class="form-label">Email</label>
+
+            <input asp-for="Email" type="text" class="form-control">
+            <span class="text-danger" asp-validation-for="Email">
+            </span>
+        </div>
+
+        @if (TempData["msg"] != null)
+        {
+            <div class="mb-3">
+                @TempData["msg"]
+            </div>
+        }
+
+        <button type="submit" class="btn btn-primary">Update</button>
+        <a class="btn btn-danger"href="/Person/DisplayPerson">Back </a>
+
+
+
+
+    </form>
+
+</div>
