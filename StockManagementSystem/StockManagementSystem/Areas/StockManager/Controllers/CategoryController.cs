@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using StockManagementSystem.BusinessObjects;
 using StockManagementSystem.Models.Domain;
 using StockManagementSystem.Repository;
+using StockManagementSystem.Services;
 using StockManagementSystem.UnitOfWorks;
 
 namespace StockManagementSystem.Areas.StockManager.Controllers
@@ -12,9 +14,11 @@ namespace StockManagementSystem.Areas.StockManager.Controllers
     {
 
         private readonly IApplicationUnitOfwork _unitOfWork;
-        public CategoryController(IApplicationUnitOfwork unitOfWork)
+        private readonly ICategoryService _categoryService;
+        public CategoryController(IApplicationUnitOfwork unitOfWork,ICategoryService categoryService)
         {
             _unitOfWork = unitOfWork;
+            _categoryService = categoryService;
 
         }
         public IActionResult Index()
@@ -29,7 +33,7 @@ namespace StockManagementSystem.Areas.StockManager.Controllers
         {
 
 
-            ViewData["Category"] = _unitOfWork._categories.GetAll();
+            ViewData["Category"] = _categoryService.GetAll();
 
             return View();
         }
@@ -37,8 +41,9 @@ namespace StockManagementSystem.Areas.StockManager.Controllers
 
         public IActionResult AddCategory(Category category)
         {
-            _unitOfWork._categories.Add(category);
-            _unitOfWork.Save();
+            CategoryBO cat = new CategoryBO();
+            cat.Name= category.Name;
+             _categoryService.Create(cat);
 
             return RedirectToAction("AddCategory");
         }
@@ -80,7 +85,7 @@ namespace StockManagementSystem.Areas.StockManager.Controllers
             _unitOfWork.Save();
 
             return RedirectToAction("AddCategory");
-        }
+        } 
 
     }
 }

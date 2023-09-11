@@ -7,5 +7,7 @@
         IEnumerable<TEntity> GetAll();
         TEntity GetById(int id);
         void Update(TEntity item);
+
+
     }
 }

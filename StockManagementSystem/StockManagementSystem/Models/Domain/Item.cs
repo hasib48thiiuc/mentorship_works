@@ -9,6 +9,7 @@ namespace StockManagementSystem.Models.Domain
 {
     public class Item
     {
+        
         public int Id { get; set; }
 
         

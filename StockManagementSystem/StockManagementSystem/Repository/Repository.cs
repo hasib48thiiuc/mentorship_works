@@ -7,6 +7,7 @@ namespace StockManagementSystem.Repository
     {
         protected ApplicationDbContext _ctx;
 
+
         protected DbSet<TEntity> _dbset;
 
 
@@ -20,12 +21,17 @@ namespace StockManagementSystem.Repository
 
         public void Add(TEntity item)
         {
+            
+
             _dbset.Add(item);
         }
 
         public IEnumerable<TEntity> GetAll()
         {
+
+
             IEnumerable<TEntity> items = _dbset.ToList();
+
 
             return items;
 

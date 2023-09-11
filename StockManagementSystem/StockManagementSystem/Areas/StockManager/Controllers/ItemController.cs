@@ -67,7 +67,7 @@ namespace StockManagementSystem.Areas.StockManager.Controllers
 
             return View(items);
         }
-        public IActionResult DeleteItem(int id)
+        public IActionResult DeleteItem(int id) 
         {
             _UnitOfWork._items.Delete(id);
 

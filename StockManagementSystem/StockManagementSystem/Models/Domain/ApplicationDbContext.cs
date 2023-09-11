@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel;
 using System.Reflection.Emit;
-
+using StockManagementSystem.Models.Domain;
 namespace StockManagementSystem.Models.Domain
 {
     public class ApplicationDbContext:DbContext

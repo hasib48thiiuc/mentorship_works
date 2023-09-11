@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using StockManagementSystem.Data;
 using StockManagementSystem.Models.Domain;
 using StockManagementSystem.Repository;
+using StockManagementSystem.Services;
 using StockManagementSystem.UnitOfWorks;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -25,9 +26,10 @@ builder.Services.AddTransient<ICompanyRepository,CompanyRepository>();
 builder.Services.AddTransient<ICategoryRepository,CategoryRepository>();
 
 builder.Services.AddTransient<IItemRepository, ItemRepository>();
-
 builder.Services.AddTransient<IApplicationUnitOfwork, ApplicationUnitOfWork>();
 
+builder.Services.AddTransient<ICategoryService,CategoryService>();
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

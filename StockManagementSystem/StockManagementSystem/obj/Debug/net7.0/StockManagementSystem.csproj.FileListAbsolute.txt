@@ -262,3 +262,5 @@ C:\mentorship_works\StockManagementSystem\StockManagementSystem\bin\Debug\net7.0
 C:\mentorship_works\StockManagementSystem\StockManagementSystem\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\mentorship_works\StockManagementSystem\StockManagementSystem\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\mentorship_works\StockManagementSystem\StockManagementSystem\obj\Debug\net7.0\scopedcss\Areas\StockManager\Views\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\mentorship_works\StockManagementSystem\StockManagementSystem\bin\Debug\net7.0\AutoMapper.dll
+C:\mentorship_works\StockManagementSystem\StockManagementSystem\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
