@@ -1,0 +1,30 @@
+﻿@model StockManagementSystem.Models.Domain.Category
+@{
+    ViewData["Title"] = "EditCategoryName";
+}
+
+<h1>EditCategoryName</h>
+
+    
+     <div class="mt-2 " style="width:50%">
+    <form asp-action="EditCategoryName">
+        
+        <input asp-for="Id" type="hidden" class="form-control" />
+
+        <div class="mb-3">
+            <label asp-for="Name" class="form-label"></label>
+
+            <input asp-for="Name" type="text" class="form-control">
+
+            <span class="text-danger" asp-validation-for="Name">
+            </span>
+
+        </div>
+
+        <button type="submit" class="btn btn-primary">Update</button>
+
+    </form>
+
+
+</div>
+
