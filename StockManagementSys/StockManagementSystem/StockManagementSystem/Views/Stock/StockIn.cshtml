@@ -1,0 +1,270 @@
+﻿@using StockManagementSystem.Models.Domain;
+@model CompanyItemViewModel;
+@{
+  ViewData["Title"] = "StockIn";
+
+}
+
+<h1>StockIn</h1>
+<form action="/Stock/StockIn" method="post">
+  <div class="container">
+    <h1>Company Item</h1>
+
+    <select id="companyId" name="CompanyId" asp-items="Model.Companies.Select(company => new SelectListItem { Value = company.Id.ToString(), Text = company.Name })"
+    onchange="populateItems()">
+            <option value="companyId">Select Company</option>
+    </select>
+
+    <select name="ItemId" id="itemId" asp-items="Model.Items.Select(items=> new SelectListItem {Value =items.Id.ToString(),Text = items.Name })"
+           onchange="updateItemDetails()">
+      <option value="itemId">Select Item</option>
+    </select>
+
+    <input type="number" name="Quantity" id="quantity" asp-for="SelectedItem.Quantity" placeholder="Quantity" data-val-required />
+        <input type="number" name="ReorderLevel" id="reorderLevel" asp-for="SelectedItem.ReOrderLevel" placeholder="Reorder Level" data-val-required />
+    <input type="number" name="QuantityToAdd" id="quantityToAdd" placeholder="Quantity to Add" />
+        <button type="submit" class="btn btn-primary ">Submit</button>
+    </div>
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+  function populateItems() {
+    var companyId = $("#companyId").val();
+
+    $.ajax({
+      url: "/Stock/GetItemsByCompanyId",
+      data: { companyId: companyId },
+      success: function (data) {
+        $("#itemId").html(""); // Clear the options before appending new ones
+        $.each(data, function (key, value) {
+          $("#itemId").append('<option value="' + value.id + '">' + value.name + '</option>');
+        });
+      }
+    });
+  }
+
+  function updateItemDetails() {
+    var selectedItemId = $("#itemId").val();
+
+  // Log the selected item ID to the console
+  console.log("Selected item ID:", selectedItemId);
+
+  $.ajax({
+    url: "/Stock/UpdateItemDetails",
+    data: { itemId: selectedItemId },
+    success: function (data) {
+      var item = data;
+
+  // Log the Item object to the console
+  console.log("Item: ishan", item);
+
+        $("#quantity").val(item.quantity);
+         console.log("item quantity:",item.quantity);
+                console.log("item reordr:", item.reOrderLevel);
+
+       $("#reorderLevel").val(item.reOrderLevel);
+
+      }
+    });
+  }
+
+  // Call the updateItemDetails() function before the populateItems() function
+  $(document).ready(function () {
+    updateItemDetails();
+  populateItems();
+  });
+</script>
+
+
+@*@using StockManagementSystem.Models.Domain;
+@model CompanyItemViewModel;
+@{
+    ViewData["Title"] = "StockIn";
+
+    IEnumerable<Item> items = ViewData["item"] as IEnumerable<Item>;
+}
+
+<h1>StockIn</h1>
+<form action="/Stock/StockIn" method="post">
+    <div class="container">
+        <h1>Company Item</h1>
+
+        <select id="companyId" name="CompanyId" asp-items="Model.Companies.Select(company => new SelectListItem { Value = company.Id.ToString(), Text = company.Name })" onchange="populateItems()">
+            <option value="">Select Company</option>
+        </select>
+
+        <select name="ItemId" id="itemId" asp-items="Model.Items.Select(items=> new SelectListItem {Value =items.Id.ToString(),Text = items.Name })" onchange="updateItemDetails()">
+            <option value="">Select Item</option>
+        </select>
+        <input type="number" name="Quantity" id="quantity" asp-for="NewItem.Quantity" placeholder="Quantity" data-val-required />
+        <input type="number" name="ReorderLevel" id="reorderLevel" asp-for="NewItem.ReOrderLevel" placeholder="Reorder Level" readonly />
+        <input type="submit" value="Save" />
+    </div>
+</form>
+
+<script>
+    function populateItems() {
+        var companyId = $("#companyId").val();
+
+        $.ajax({
+            url: "/Stock/GetItemsByCompanyId",
+            data: { companyId: companyId },
+            success: function (data) {
+                $("#itemId").html(""); // Clear the options before appending new ones
+                $.each(data, function (key, value) {
+                    $("#itemId").append('<option value="' + value.id + '">' + value.name + '</option>');
+                });
+
+                // Call the updateItemDetails() function after populating items
+                updateItemDetails();
+            }
+        });
+    }
+
+    function updateItemDetails() {
+        var selectedItemId = $("#itemId").val();
+
+        $.ajax({
+            url: "/Stock/UpdateItemDetails",
+            data: { itemId: selectedItemId },
+            success: function (data) {
+                var item = data;
+
+                $("#quantity").val(item.Quantity);
+                $("#reorderLevel").val(item.ReorderLevel);
+            }
+        });
+    }
+
+</script>*@
+
+@*@using StockManagementSystem.Models.Domain;
+@model CompanyItemViewModel;
+@{
+    ViewData["Title"] = "StockIn";
+
+    IEnumerable<Item> items = ViewData["item"] as IEnumerable<Item>; 
+
+}
+
+
+
+<h1>StockIn</h1>
+<form action="/Stock/StockIn" method="post">
+    <div class="container">
+        <h1>Company Item</h1>
+
+        <select id="companyId" name="CompanyId" onchange="populateItems()">
+            <option value="">Select Company</option>
+            @foreach (var company in Model.Companies)
+            {
+                <option value="@company.Id">@company.Name</option>
+            }
+        </select>
+
+        <select name="ItemId" id="itemId" onchange="updateItemDetails()">
+            <option value="">Select Item</option>
+        </select>
+        <input type="number" name="Quantity" id="quantity" value="" placeholder="Quantity" />
+        <input type="number" name="ReorderLevel" id="reorderLevel" value="" placeholder="Reorder Level" readonly />
+        <input type="submit" value="Save" />
+    </div>
+</form>
+
+<script>
+    function populateItems() {
+        var companyId = $("#companyId").val();
+
+        $.ajax({
+            url: "/Stock/GetItemsByCompanyId",
+            data: { companyId: companyId },
+            success: function (data) {
+                $("#itemId").html(""); // Clear the options before appending new ones
+                $.each(data, function (key, value) {
+                    $("#itemId").append('<option value="' + value.id + '">' + value.name + '</option>');
+                });
+
+                // Call the updateItemDetails() function after populating items
+                updateItemDetails();
+            }
+        });
+    }
+
+    function updateItemDetails() {
+        // Add a console.log statement here to make sure the function is being triggered
+        console.log("Updating item details");
+
+        var selectedItemId = $("#itemId").val();
+
+        // Add a console.log statement here to make sure the selectedItemId variable is being populated correctly
+        console.log("selectedItemId:", selectedItemId);
+
+
+        function updateItemDetails() {
+            var selectedItemId = $("#itemId").val();
+
+            $.ajax({
+                url: "/Stock/UpdateItemDetails",
+                data: { itemId: selectedItemId },
+                success: function (data) {
+                    var item = data;
+
+                    $("#quantity").val(item.Quantity);
+                    $("#reorderLevel").val(item.ReorderLevel);
+                }
+            });
+        }
+    }
+
+</script>
+
+
+
+
+
+
+*@
+@*
+
+<h1>StockIn</h1>
+<form action="/StockIn" method="post">
+<div class="container">
+    <h1>Company Item</h1>  
+    
+    <select id="companyId" name="companyId" onchange="populateItems()">
+        <option value="">Select Company</option>
+        @foreach (var company in Model.Companies)
+        {
+            <option value="@company.Id">@company.Name</option>
+        }
+
+    </select>
+
+    <select name="itemId" id="itemId">
+        <option value="">Select Item</option>
+        @foreach (var item in Model.Items)
+        {
+            <option value="@item.Id">@item.Name</option>
+        }
+    </select>
+    <input type="number" name="quantity" value="@Model.Quantity " placeholder="Quantity" />
+    <input type="number" name="reorderLevel" value="@Model.ReorderLevel"  placeholder="Reorder Level" readonly />
+    <input type="submit" value="Save" />
+</div>
+
+<script>
+    function populateItems() {
+        var companyId = $("#companyId").val();
+
+        $.ajax({
+            url: "/Stock/GetItemsByCompanyId",
+            data: { companyId: companyId },
+            success: function (data) {
+                $("#itemId").html(data);
+            }
+        });
+    }
+</script>
+</form>*@

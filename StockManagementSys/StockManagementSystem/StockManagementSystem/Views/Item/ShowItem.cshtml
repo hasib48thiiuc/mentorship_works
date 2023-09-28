@@ -1,0 +1,102 @@
+﻿
+@using StockManagementSystem.Models.Domain;
+
+
+@model IEnumerable<StockManagementSystem.Models.Domain.Item>;
+
+
+
+@{
+    ViewData["Title"] = "GetAll";
+
+     
+}
+
+<h1>ShowItem</h1>
+
+
+<div class="mt-2" style="width:100%">
+
+     <div>
+            <a href="/Item/AddItem" class="btn btn-success">
+                                Add New Item
+                            </a>
+        
+
+    <div class="row">
+        <div class="col-md-4 mb-5">
+        </div>
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <td>Id</td>
+                    <td>Name</td>
+                     <td>Category</td>
+                    <td>Company</td>
+                    <td>Available Quantity</td>
+                     <td>ReOrder Level</td>
+
+
+
+                    <td>
+                        Action
+                    </td>
+
+                </tr>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Name</td>
+                        <td>@item.Category.Name</td>
+                         <td>@item.Company.Name</td>
+                       <td>@item.Quantity</td>
+                     <td>@item.ReOrderLevel</td>
+                        <td>
+                            <a href="/StockManager/Item/EditItem?id=@item.Id" class="btn btn-success">
+
+                                Edit
+
+                            </a>
+                            <a href="/StockManager/Item/DeleteItem?id=@item.Id" class="btn btn-danger">
+
+                                Delete
+
+                            </a>
+                                <a href="/Stock/EditItem?id=@item.Id" class="btn btn-success">
+
+                                    Edit
+
+                                </a>
+
+                        </td>
+
+                    </tr>
+                }
+            </thead>
+
+
+        </table>
+
+
+    </div>
+</div>
+
+@*@functions{
+
+
+    object GetCompanies(int id,IEnumerable<Company> companies)
+
+    {
+         var company = companies.FirstOrDefault(c=>c.Id==id);
+        return company.Name;
+    }
+
+      object GetCategory(int id,IEnumerable<Category> categories)
+
+    {
+         var category =  categories.FirstOrDefault(c=>c.Id==id);
+        return category.Name;
+    }
+}
+*@
