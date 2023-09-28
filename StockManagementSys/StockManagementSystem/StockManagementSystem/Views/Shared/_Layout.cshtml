@@ -26,21 +26,52 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
-                    </ul>
+
+                        <li>
+                            <a class="nav-link text-dark" href="/Category/AddCategory">
+
+                                Categories
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="nav-link text-dark" href="/Company/AddCompanyName">
+
+                                Companies
+
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link text-dark"  href="/Item/ShowItem">
+
+                                Items
+
+                            </a>
+                        </li>
+                 
+                </ul>
+                     <a href="/Stock/StockIn" class="btn btn-success">
+
+                                    StockIn
+
+                     </a>
+                     
                     <partial name="_LoginPartial" />
                 </div>
             </div>
         </nav>
     </header>
     <div class="container">
-        <main role="main" class="pb-3">
+       <div> <main role="main" class="pb-3">
             @RenderBody()
         </main>
+        </div>
     </div>
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2023 - StockManagementSystem - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2023 - StockManagementSystem - <a asp-area="" asp-controller="Item" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

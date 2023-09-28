@@ -14,10 +14,15 @@ namespace StockManagementSystem.Repository
             IEnumerable<Item> items= _ctx.Items.Include(x=>x.Category).Include(x=>x.Company).ToList();
             return items;
         }
-  
-      
 
-       
-     
+
+        public IEnumerable<Item> GetItemByCompany(int id)
+        {
+            IEnumerable<Item> items = _ctx.Items.Where(item => item.CompanyID == id).ToList();
+        
+            return items;
+        }
+
+
     }
 }

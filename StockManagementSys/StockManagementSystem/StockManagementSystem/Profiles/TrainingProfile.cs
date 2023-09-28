@@ -9,6 +9,10 @@ namespace StockManagementSystem.Profiles
         public TrainingProfile()
         {
             CreateMap<Category,CategoryBO>().ReverseMap();
+            CreateMap<Company, CompanyBO>().ReverseMap();
+            CreateMap<Item, ItemBO>().ReverseMap();
+
+
 
         }
     }

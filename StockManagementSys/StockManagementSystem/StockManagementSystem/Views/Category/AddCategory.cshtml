@@ -2,13 +2,10 @@
 @model StockManagementSystem.Models.Domain.Category
 @{
     ViewData["Title"] = "AddCategory";
-
-    IEnumerable<Category> cats = ViewData["Category"] as IEnumerable<Category>;
-
+    IEnumerable<Category>? cats = ViewData["Category"] as IEnumerable<Category>;
 }
-
+   
 <h1>Add Category</h1>
-
 
 <div class="mt-2 " style="width:50%">
     <form asp-action="AddCategory">
@@ -45,18 +42,18 @@
                     </td>
 
                 </tr>
-                @foreach (var item in cats)
+                @foreach (Category? item in cats)
                 {
                     <tr>
                         <td>@item.Id</td>
                         <td>@item.Name</td>
                         <td>
-                            <a href="/StockManager/Category/EditCategoryName?id=@item.Id" class="btn btn-success">
+                            <a href="/Category/EditCategoryName?id=@item.Id" class="btn btn-success">
 
                                 Edit
 
                             </a>
-                            <a href="/StockManager/Category/RemoveCategory?id=@item.Id" class="btn btn-danger">
+                            <a href="/Category/RemoveCategory?id=@item.Id" class="btn btn-danger">
 
                                 Delete
 

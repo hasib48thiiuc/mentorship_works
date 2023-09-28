@@ -12,28 +12,28 @@ namespace StockManagementSystem.Controllers
 
       
         private readonly ICategoryService _categoryService;
-        private IMapper _mapper;
+        private IMapper? _mapper;
 
 
-        public CategoryController(ICategoryService categoryService)
+        public CategoryController(ICategoryService categoryService
+                               ,IMapper mapper)
         {
    
             _categoryService = categoryService;
+            _mapper = mapper;
 
         }
         public IActionResult Index()
         {
             return View();
         }
-
-
-
-
         public IActionResult AddCategory()
         {
+            List<CategoryBO> list = _categoryService.GetAll();
+          /// var CategoryEO = _mapper?.Map<IEnumerable<CategoryBO>?, IEnumerable<Category>?>(list);
+            var CategoryEO = _mapper.Map<List<CategoryBO>, List<Category>>(list);
 
-
-            ViewData["Category"] = _categoryService.GetAll();
+            ViewData["Category"] = CategoryEO;
 
             return View();
         }
@@ -49,14 +49,18 @@ namespace StockManagementSystem.Controllers
         }
 
 
-      /*  public IActionResult EditCategoryName(int id)
+        public IActionResult EditCategoryName(int id)
         {
 
-            var category = _categoryService.
-            return View(category);
-        }*/
+            var category = _categoryService.GetById(id);
 
-      /*  [HttpPost]
+            
+                Category CATEO = _mapper.Map<Category>(category);
+            
+            return View(CATEO);
+        }
+
+        [HttpPost]
         public IActionResult EditCategoryName(Category category)
         {
 
@@ -67,9 +71,10 @@ namespace StockManagementSystem.Controllers
 
             try
             {
-                _unitOfWork._categories.Update(category);
-                _unitOfWork.Save();
 
+                CategoryBO catBO = _mapper.Map<CategoryBO>(category);
+                _categoryService.Update(catBO);
+                
                 return RedirectToAction("AddCategory");
             }
             catch
@@ -77,15 +82,13 @@ namespace StockManagementSystem.Controllers
                 return View();
             }
         }
-
+      
         public IActionResult RemoveCategory(int id)
         {
-            _unitOfWork._categories.Delete(id);
-
-            _unitOfWork.Save();
+            _categoryService.Delete(id);
 
             return RedirectToAction("AddCategory");
-        }*/
+        }
 
     }
 

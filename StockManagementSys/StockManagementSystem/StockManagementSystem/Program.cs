@@ -69,11 +69,13 @@ builder.Services.Configure<IdentityOptions>(options =>
 
 builder.Services.AddTransient<ICompanyRepository, CompanyRepository>();
 builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
-
 builder.Services.AddTransient<IItemRepository, ItemRepository>();
+
 builder.Services.AddTransient<IApplicationUnitOfwork, ApplicationUnitOfWork>();
 
 builder.Services.AddTransient<ICategoryService, CategoryService>();
+builder.Services.AddTransient<ICompanyServices, CompanyService>();
+builder.Services.AddTransient<IItemServices, ItemServices>();
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddControllersWithViews();

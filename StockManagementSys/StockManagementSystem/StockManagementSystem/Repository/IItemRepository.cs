@@ -6,6 +6,9 @@ namespace StockManagementSystem.Repository
     {
      
         IEnumerable<Item> GetAllInItem();
-        
+        IEnumerable<Item> GetItemByCompany(int id);
+
+
+
     }
 }
