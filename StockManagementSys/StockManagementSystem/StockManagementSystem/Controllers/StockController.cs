@@ -46,13 +46,12 @@ namespace StockManagementSystem.Controllers
                 return View(item);
             }
 
-            // Update the item's quantity in the database
-           // _itemServices.UpdateItemQuantity(item.NewItem.Id, item.NewItem.Quantity);
+            //Update the item's quantity in the database
+            _itemServices.UpdateItemQuantity(item.SelectedItemId , item.StockInQuantity );
 
             // Return to the StockIn page
             return RedirectToAction("StockIn");
         }
-
         public IActionResult GetItemsByCompanyId(int companyId)
         {
             List<ItemBO> itemBO = _itemServices.GetItemsByCompanyId(companyId);
@@ -68,19 +67,11 @@ namespace StockManagementSystem.Controllers
             {
                 return NotFound();
             }
-            return Ok(item2);
+            return Json(item2);
         }
 
         
 
-        public IActionResult UpdateItemQuantity(int itemId, int quantity)
-        {
-            // Update the item's quantity in the database
-        //    _itemServices.UpdateItemQuantity(itemId, quantity);
-
-            // Return to the StockIn page
-            return RedirectToAction("StockIn");
-        }
 
 
     }

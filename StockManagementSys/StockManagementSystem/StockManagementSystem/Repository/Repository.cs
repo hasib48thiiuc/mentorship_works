@@ -14,7 +14,7 @@ namespace StockManagementSystem.Repository
         public Repository(ApplicationDbContext ctx)
         {
             _ctx = ctx;
-
+            _ctx.Database.SetCommandTimeout(20);
             _dbset = _ctx.Set<TEntity>();
 
         }
@@ -29,7 +29,7 @@ namespace StockManagementSystem.Repository
         public IEnumerable<TEntity> GetAll()
         {
 
-
+           
             IEnumerable<TEntity> items = _dbset.ToList();
 
 
@@ -43,9 +43,6 @@ namespace StockManagementSystem.Repository
             return item;
 
         }
-
-
-
 
         public void Update(TEntity item)
         {

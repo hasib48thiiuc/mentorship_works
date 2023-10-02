@@ -1,80 +1,100 @@
-﻿@using StockManagementSystem.Models.Domain;
-@model CompanyItemViewModel;
+﻿@model CompanyItemViewModel;
 @{
-  ViewData["Title"] = "StockIn";
+ ViewData["Title"] = "StockIn";
 
 }
 
 <h1>StockIn</h1>
 <form action="/Stock/StockIn" method="post">
-  <div class="container">
-    <h1>Company Item</h1>
+ <div class="container">
 
-    <select id="companyId" name="CompanyId" asp-items="Model.Companies.Select(company => new SelectListItem { Value = company.Id.ToString(), Text = company.Name })"
-    onchange="populateItems()">
-            <option value="companyId">Select Company</option>
-    </select>
+  <h1>Company Item</h1>
+    <label asp-for="SelectedCompanyId" class="mb-1" >Company</label>
+ 
+                   <select class="form-select mt-2" id="companyId" onchange="populateItems()"
+                asp-for="SelectedCompanyId">
+                  <option disabled selected>
+                                    >----Select Item----
+                </option>
+                  @foreach(var item in Model.Companies)
+             {        <option asp-for="SelectedCompanyId"
+                  onchange="populateItems()"
+                   id="companyId" value="@item.Id">@item.Name</option>
+                }
+                </select>
+        <select class="form-select mt-2" id="itemId"  onchange="updateItemDetails()"
+                    asp-for="SelectedItemId" >
+            <option  selected>
+                                    >----Select Item----
+                </option>
+          
+        </select>
 
-    <select name="ItemId" id="itemId" asp-items="Model.Items.Select(items=> new SelectListItem {Value =items.Id.ToString(),Text = items.Name })"
-           onchange="updateItemDetails()">
-      <option value="itemId">Select Item</option>
-    </select>
 
-    <input type="number" name="Quantity" id="quantity" asp-for="SelectedItem.Quantity" placeholder="Quantity" data-val-required />
-        <input type="number" name="ReorderLevel" id="reorderLevel" asp-for="SelectedItem.ReOrderLevel" placeholder="Reorder Level" data-val-required />
-    <input type="number" name="QuantityToAdd" id="quantityToAdd" placeholder="Quantity to Add" />
-        <button type="submit" class="btn btn-primary ">Submit</button>
-    </div>
+@*  <select name="ItemId" id="itemId" asp-items="Model.Items.Select(items=> new SelectListItem {Value =items.Id.ToString(),Text = items.Name })"
+      onchange="updateItemDetails()">
+   <option value="itemId">Select Item</option>
+  </select>
+
+
+        *@       
+        <input readonly class="form-select mt-2" type="number" name="SelectedItemQuantity" id="quantity" asp-for="SelectedItem.Quantity" placeholder="Quantity"/>
+        <input readonly class="form-select mt-2" type="number" name="SelectedItemReorderLevel" id="reorderLevel" asp-for="SelectedItem.ReOrderLevel" placeholder="Reorder Level"/>
+        <input type="number" name="QuantityToAdd" id="stockinquantity" asp-for="@Model.StockInQuantity" placeholder="Quantity to Add" />
+     <button type="submit" class="btn btn-primary" value="submit">Submit</button>
+  </div>
 </form>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <script>
-  function populateItems() {
-    var companyId = $("#companyId").val();
 
-    $.ajax({
-      url: "/Stock/GetItemsByCompanyId",
-      data: { companyId: companyId },
-      success: function (data) {
-        $("#itemId").html(""); // Clear the options before appending new ones
-        $.each(data, function (key, value) {
-          $("#itemId").append('<option value="' + value.id + '">' + value.name + '</option>');
-        });
-      }
-    });
-  }
-
-  function updateItemDetails() {
-    var selectedItemId = $("#itemId").val();
-
-  // Log the selected item ID to the console
-  console.log("Selected item ID:", selectedItemId);
+ function populateItems() {
+  var companyId = $("#companyId").val();
 
   $.ajax({
-    url: "/Stock/UpdateItemDetails",
-    data: { itemId: selectedItemId },
-    success: function (data) {
-      var item = data;
-
-  // Log the Item object to the console
-  console.log("Item: ishan", item);
-
-        $("#quantity").val(item.quantity);
-         console.log("item quantity:",item.quantity);
-                console.log("item reordr:", item.reOrderLevel);
-
-       $("#reorderLevel").val(item.reOrderLevel);
-
-      }
+   url: "/Stock/GetItemsByCompanyId",
+   data: { companyId: companyId },
+   success: function (data) {
+  $("#itemId").find('option:enabled').remove(); // Clear the options before appending new ones
+    $(data).each(
+           function (key, value) {
+            $("#itemId").append('<option value="' + value.id + '">' + value.name + '</option>');
     });
-  }
-
-  // Call the updateItemDetails() function before the populateItems() function
-  $(document).ready(function () {
-    updateItemDetails();
-  populateItems();
+   }
   });
+ }
+
+ function updateItemDetails() {
+  var selectedItemId = $("#itemId").val();
+
+ // Log the selected item ID to the console
+ console.log("Selected item ID:", selectedItemId);
+
+ $.ajax({
+  url: "/Stock/UpdateItemDetails",
+  data: { itemId: selectedItemId },
+  success: function (data) {
+    $('#quantity').empty();
+   $('#reorderLevel').empty();
+
+    var item = data;
+
+ // Log the Item object to the console
+ console.log("Item: ishan", item);
+
+    $("#quantity").val(item.quantity);
+     console.log("item quantity:",item.quantity);
+        console.log("item reordr:", item.reOrderLevel);
+
+    $("#reorderLevel").val(item.reOrderLevel);
+
+   }
+  }); 
+ }
+
+ // Call the populateItems() function before the updateItemDetails() function
+
 </script>
 
 

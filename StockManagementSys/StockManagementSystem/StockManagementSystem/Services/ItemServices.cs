@@ -63,15 +63,23 @@ namespace StockManagementSystem.Services
                return catBO;
            }
 
-          /* public void Update(CategoryBO item)
-           {
-               CategoryEO catEO = _mapper.Map<CategoryEO>(item);
+        public void UpdateItemQuantity(int id, int quantity)
+        {
+            Item item=_unitOfWork._items.GetById(id);
+            item.Quantity += quantity;
+            _unitOfWork._items.Update(item);
+            _unitOfWork.Save();
+         }
 
-               _unitofwork._categories.Update(catEO);
+        /* public void Update(CategoryBO item)
+         {
+             CategoryEO catEO = _mapper.Map<CategoryEO>(item);
 
-               _unitofwork.Save();
+             _unitofwork._categories.Update(catEO);
+
+             _unitofwork.Save();
 
 
-           }*/
+         }*/
     }
 }

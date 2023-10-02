@@ -9,8 +9,8 @@ namespace StockManagementSystem.Controllers
 {
     public class CategoryController : Controller
     {
+       
 
-      
         private readonly ICategoryService _categoryService;
         private IMapper? _mapper;
 
@@ -63,6 +63,8 @@ namespace StockManagementSystem.Controllers
         [HttpPost]
         public IActionResult EditCategoryName(Category category)
         {
+
+
 
             if (!ModelState.IsValid)
             {

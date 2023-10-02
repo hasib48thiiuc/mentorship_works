@@ -10,6 +10,7 @@ namespace StockManagementSystem.Services
         List<ItemBO> GetAll();
         List<ItemBO> GetItemsByCompanyId(int companyId);
         ItemBO GetById(int id);
+        void UpdateItemQuantity(int id, int quantity);
         //void Update(ItemBO  item);
     }
 }
