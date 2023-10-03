@@ -4,11 +4,9 @@
 
 }
 
-<h1>StockIn</h1>
-<form action="/Stock/StockIn" method="post">
+<h1 style="background-color:peachpuff;text-align:center"> Welcome to Stock In Section</h1>
+<form action="/StockIn/StockIn" method="post">
  <div class="container">
-
-  <h1>Company Item</h1>
     <label asp-for="SelectedCompanyId" class="mb-1" >Company</label>
  
                    <select class="form-select mt-2" id="companyId" onchange="populateItems()"
@@ -40,7 +38,7 @@
         *@       
         <input readonly class="form-select mt-2" type="number" name="SelectedItemQuantity" id="quantity" asp-for="SelectedItem.Quantity" placeholder="Quantity"/>
         <input readonly class="form-select mt-2" type="number" name="SelectedItemReorderLevel" id="reorderLevel" asp-for="SelectedItem.ReOrderLevel" placeholder="Reorder Level"/>
-        <input type="number" name="QuantityToAdd" id="stockinquantity" asp-for="@Model.StockInQuantity" placeholder="Quantity to Add" />
+        <input type="number" name="QuantityToChange" id="stockinquantity" asp-for="QuantityToChange" placeholder="Quantity to Add" />
      <button type="submit" class="btn btn-primary" value="submit">Submit</button>
   </div>
 </form>
@@ -53,10 +51,11 @@
   var companyId = $("#companyId").val();
 
   $.ajax({
-   url: "/Stock/GetItemsByCompanyId",
+   url: "/StockIn/GetItemsByCompanyId",
    data: { companyId: companyId },
    success: function (data) {
   $("#itemId").find('option:enabled').remove(); // Clear the options before appending new ones
+                $("#itemId").append('<option value="">select item</option>');
     $(data).each(
            function (key, value) {
             $("#itemId").append('<option value="' + value.id + '">' + value.name + '</option>');
@@ -72,7 +71,7 @@
  console.log("Selected item ID:", selectedItemId);
 
  $.ajax({
-  url: "/Stock/UpdateItemDetails",
+  url: "/StockIn/UpdateItemDetails",
   data: { itemId: selectedItemId },
   success: function (data) {
     $('#quantity').empty();

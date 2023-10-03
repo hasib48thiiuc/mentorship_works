@@ -9,13 +9,13 @@ using StockManagementSystem.Services;
 
 namespace StockManagementSystem.Controllers
 {
-    public class StockController : Controller
+    public class StockInController : Controller
     {
         private readonly ICompanyServices _companyService;
         private readonly IItemServices _itemServices;
         private IMapper _mapper;
 
-        public StockController(IItemServices itemServices,ICompanyServices companyService,IMapper mapper)
+        public StockInController(IItemServices itemServices,ICompanyServices companyService,IMapper mapper)
         {
             _mapper=mapper;
             _companyService=companyService;
@@ -47,7 +47,7 @@ namespace StockManagementSystem.Controllers
             }
 
             //Update the item's quantity in the database
-            _itemServices.UpdateItemQuantity(item.SelectedItemId , item.StockInQuantity );
+            _itemServices.UpdateItemQuantity(item.SelectedItemId , item.QuantityToChange );
 
             // Return to the StockIn page
             return RedirectToAction("StockIn");

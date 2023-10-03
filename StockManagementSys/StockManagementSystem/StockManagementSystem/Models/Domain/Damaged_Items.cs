@@ -1,6 +1,6 @@
 ﻿namespace StockManagementSystem.Models.Domain
 {
-    public class Sales
+    public class Damaged_Items
     {
         public int Id { get; set; } 
 

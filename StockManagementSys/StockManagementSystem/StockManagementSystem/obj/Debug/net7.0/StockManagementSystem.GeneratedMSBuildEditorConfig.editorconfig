@@ -84,8 +84,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/mentorship_works/StockManagementSys/StockManagementSystem/StockManagementSystem/Views/Stock/StockIn.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tcU3RvY2tJbi5jc2h0bWw=
+[C:/mentorship_works/StockManagementSys/StockManagementSystem/StockManagementSystem/Views/StockIn/StockIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tJblxTdG9ja0luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/mentorship_works/StockManagementSys/StockManagementSystem/StockManagementSystem/Views/StockOut/StockOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tPdXRcU3RvY2tPdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/mentorship_works/StockManagementSys/StockManagementSystem/StockManagementSystem/Views/_ViewImports.cshtml]

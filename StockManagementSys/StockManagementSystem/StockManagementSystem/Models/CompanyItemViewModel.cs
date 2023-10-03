@@ -11,7 +11,7 @@ namespace StockManagementSystem.Models
         public IEnumerable<Company>? Companies { get; set; }
         public IEnumerable<Item>? Items { get; set; } 
         public Item? SelectedItem { get; set; } = new Item();
-        public int StockInQuantity { get; set; }
+        public int QuantityToChange { get; set; }
 
         public int SelectedCompanyId { get; set; }
         public int SelectedItemId { get; set; }
