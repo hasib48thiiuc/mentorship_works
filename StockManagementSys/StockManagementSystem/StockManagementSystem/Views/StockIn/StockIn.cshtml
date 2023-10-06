@@ -9,16 +9,16 @@
  <div class="container">
     <label asp-for="SelectedCompanyId" class="mb-1" >Company</label>
  
-                   <select class="form-select mt-2" id="companyId" onchange="populateItems()"
+                <select class="form-select mt-2" id="companyId" onchange="populateItems()"
                 asp-for="SelectedCompanyId">
                   <option disabled selected>
-                                    >----Select Item----
-                </option>
+                          >----Select Item----
+                 </option>
                   @foreach(var item in Model.Companies)
-             {        <option asp-for="SelectedCompanyId"
-                  onchange="populateItems()"
+                     {        <option asp-for="SelectedCompanyId"
+                    onchange="populateItems()"
                    id="companyId" value="@item.Id">@item.Name</option>
-             }
+                     }
                 </select>
         <select class="form-select mt-2" id="itemId"  onchange="updateItemDetails()"
                     asp-for="SelectedItemId" >

@@ -13,11 +13,11 @@
 <div class="container">
 
     <select class="form-select mt-2" id="companyId" onchange="populateItems()"
-                asp-for="SelectedCompanyId">
+         >
 
-        @foreach(var item in Model.Companies)
+        @foreach(var item in comps)
              {        
-        <option asp-for="SelectedCompanyId"
+        <option
             onchange="populateItems()"
              id="companyId" value="@item.Id"> @item.Name
         </option>
@@ -35,12 +35,36 @@
 <script>
 
     var itemname;
+
     var companyname;
     var quantity;
     var list = [];
     var i = 0;
     //var quantityToChange = document.getElementById('QuantityToChange').value;
 
+    function populateItems() {
+        var companyId = $("#companyId").val();
+        // Get the selected option element.
+        var selectedOption = document.querySelector('#companyId option:checked');
+
+        // Get the text of the selected option element.
+        var selectedItemName = selectedOption.textContent;
+
+        // Assign the text of the selected option element to a JavaScript variable.
+        companyname = selectedItemName;
+
+        $.ajax({
+            url: "/Item/GetCompanyById",
+            data: { companyId: companyId },
+            success: function (data) {
+                $("#itemId").find('option:enabled').remove(); // Clear the options before appending new ones
+                $("#itemId").append('<option value="">select item</option>');
+                $(data).each(
+                    function (key, value) {
+                        $("#itemId").append('<option value="' + value.id + '">' + value.name + '</option>');
+                    });
+            }
+        });
 
     function CreateTable() {
 

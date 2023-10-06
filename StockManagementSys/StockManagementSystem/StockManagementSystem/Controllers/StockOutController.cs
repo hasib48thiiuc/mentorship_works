@@ -11,7 +11,9 @@ namespace StockManagementSystem.Controllers
     {
 
         private readonly ICompanyServices _companyService;
+
         private readonly IItemServices _itemServices;
+
         private IMapper _mapper;
 
         public StockOutController(IItemServices itemServices, ICompanyServices companyService, IMapper mapper)
