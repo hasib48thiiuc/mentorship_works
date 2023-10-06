@@ -38,7 +38,7 @@
         <button type="button" onclick="CreateTable()" class="btn btn-primary" value="submit">Submit</button>
     </div>
 </form>
-<table id="mytable"  class="table table-bordered caption-top ">
+<table id="mytable"  class="table table-bordered caption-top">
     <caption class="caption-top">List of Items</caption>
     <thead class="table-dark ">
         <tr>
@@ -51,6 +51,10 @@
     <tbody>
 </tbody>
 </table>
+<button type="submit" class="btn btn-outline-primary"  value="list" style="display:inline;">Primary</button>
+<button type="button" class="btn btn-outline-primary" style="display: inline;">Primary</button>
+<button type="button" class="btn btn-outline-primary" style="display: inline;">Primary</button>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <script>
@@ -59,14 +63,14 @@
     var companyname;
     var quantity;
     var list = [];
-    let i=0;
+    var i=0;
     //var quantityToChange = document.getElementById('QuantityToChange').value;
 
 
     function CreateTable() {
 
 
-        i++;
+        
         var formData = new FormData(document.querySelector('form'));
         
         // Get the value of the QuantityToChange input field.
@@ -78,6 +82,7 @@
             
         list.push(arr);
 
+
         let j=i;
             const table = document.querySelector('table tbody');
 
@@ -88,7 +93,7 @@
             const quantity = document.createElement('td');
             serial.textContent=i;
             itemName.textContent=list[j][1];
-            company.textContent=list[j][2];
+            company.textContent=list[j][2]; 
             quantity.textContent= list[j][3];
 
             newRow.appendChild(serial);
@@ -98,7 +103,7 @@
 
             table.appendChild(newRow);
 
-            $('#companyId').reset();
+            i++;
             
     }
     function populateItems() {

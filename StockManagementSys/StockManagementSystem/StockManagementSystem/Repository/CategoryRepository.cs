@@ -9,5 +9,12 @@ namespace StockManagementSystem.Repository
         {
 
         }
+
+        public List<Category> GetCategoryByCompany(int id)
+        {
+            List<Category> categories = _ctx.Categories.Where(categories => categories.Id == id).ToList();
+
+            return categories;
+        }
     }
 }

@@ -41,7 +41,8 @@ namespace StockManagementSystem.Services
         {
             List<ItemEO> items = _unitOfWork._items.GetAllInItem().ToList();
             List<ItemBO> _clist = _mapper.Map<List<ItemEO>,List<ItemBO>>(items);
-            return _clist;        }
+            return _clist;
+        }
 
         
             public List<ItemBO> GetItemsByCompanyId(int companyId)
@@ -70,6 +71,16 @@ namespace StockManagementSystem.Services
             _unitOfWork._items.Update(item);
             _unitOfWork.Save();
          }
+
+        public List<CategoryBO> FindCategory(int id)
+        {
+            List<Category> catlist = _unitOfWork._categories.GetCategoryByCompany(id);
+
+            List<CategoryBO> catbo= _mapper.Map<List<Category>,List<CategoryBO>>(catlist);
+
+            return catbo;
+
+        }
 
         /* public void Update(CategoryBO item)
          {

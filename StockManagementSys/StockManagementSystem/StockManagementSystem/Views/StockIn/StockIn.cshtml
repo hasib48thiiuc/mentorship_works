@@ -18,7 +18,7 @@
              {        <option asp-for="SelectedCompanyId"
                   onchange="populateItems()"
                    id="companyId" value="@item.Id">@item.Name</option>
-                }
+             }
                 </select>
         <select class="form-select mt-2" id="itemId"  onchange="updateItemDetails()"
                     asp-for="SelectedItemId" >

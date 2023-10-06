@@ -81,15 +81,38 @@ namespace StockManagementSystem.Controllers
 
             return View(items);
         }
-       /* public IActionResult DeleteItem(int id)
+        public IActionResult SearchItems()
         {
-            _UnitOfWork._items.Delete(id);
 
-            _UnitOfWork.Save();
+            List<CompanyBO> compBO = _companyservices.GetAll();
+            List<Company> comps = _mapper.Map<List<CompanyBO>, List<Company>>(compBO);
 
-            return RedirectToAction("ShowItem");
+            ViewData["comps"] = comps;
+         /*   List<CategoryBO> catBO = _categoryservices.GetAll();
+            List<Category> cats = _mapper.Map<List<CategoryBO>, List<Category>>(catBO);
+
+            ViewData["Category"] = cats;*/
+
+            return View();
         }
-*/
+
+        public JsonResult GetCompanyById(int id)
+        {
+            List<CategoryBO> items= _itemservices.FindCategory(id);
+            List<Category> cats=_mapper.Map<List<CategoryBO>,List<Category>>(items);
+           
+            return Json(cats);
+        }
+
+        /* public IActionResult DeleteItem(int id)
+         {
+             _UnitOfWork._items.Delete(id);
+
+             _UnitOfWork.Save();
+
+             return RedirectToAction("ShowItem");
+         }
+ */
 
     }
 }
