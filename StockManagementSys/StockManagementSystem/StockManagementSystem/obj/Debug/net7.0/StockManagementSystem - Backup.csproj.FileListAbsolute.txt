@@ -1,0 +1,9 @@
+C:\mentorship_works\StockManagementSys\StockManagementSystem\StockManagementSystem\obj\Debug\net7.0\StockManagementSystem - Backup.csproj.AssemblyReference.cache
+C:\mentorship_works\StockManagementSys\StockManagementSystem\StockManagementSystem\obj\Debug\net7.0\StockManagementSystem - Backup.GeneratedMSBuildEditorConfig.editorconfig
+C:\mentorship_works\StockManagementSys\StockManagementSystem\StockManagementSystem\obj\Debug\net7.0\StockManagementSystem - Backup.AssemblyInfoInputs.cache
+C:\mentorship_works\StockManagementSys\StockManagementSystem\StockManagementSystem\obj\Debug\net7.0\StockManagementSystem - Backup.AssemblyInfo.cs
+C:\mentorship_works\StockManagementSys\StockManagementSystem\StockManagementSystem\obj\Debug\net7.0\StockManagementSystem - Backup.csproj.CoreCompileInputs.cache
+C:\mentorship_works\StockManagementSys\StockManagementSystem\StockManagementSystem\obj\Debug\net7.0\StockManagementSystem - Backup.MvcApplicationPartsAssemblyInfo.cs
+C:\mentorship_works\StockManagementSys\StockManagementSystem\StockManagementSystem\obj\Debug\net7.0\StockManagementSystem - Backup.MvcApplicationPartsAssemblyInfo.cache
+C:\mentorship_works\StockManagementSys\StockManagementSystem\StockManagementSystem\obj\Debug\net7.0\StockManagementSystem - Backup.RazorAssemblyInfo.cache
+C:\mentorship_works\StockManagementSys\StockManagementSystem\StockManagementSystem\obj\Debug\net7.0\StockManagementSystem - Backup.RazorAssemblyInfo.cs

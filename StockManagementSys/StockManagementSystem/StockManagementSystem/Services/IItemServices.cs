@@ -1,4 +1,5 @@
 ﻿using StockManagementSystem.BusinessObjects;
+using StockManagementSystem.Models.Domain;
 using StockManagementSystem.UnitOfWorks;
 
 namespace StockManagementSystem.Services
@@ -12,6 +13,7 @@ namespace StockManagementSystem.Services
         ItemBO GetById(int id);
         void UpdateItemQuantity(int id, int quantity);
         List<CategoryBO> FindCategory(int id);
+        void DeleteQuantity(List<SoldItemsBO> items);
         //void Update(ItemBO  item);
     }
 }

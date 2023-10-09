@@ -10,14 +10,19 @@ namespace StockManagementSystem.UnitOfWorks
         public ICategoryRepository _categories { get; private set; }
         public ICompanyRepository _companies { get; private set; }
 
+        public ISoldItemRepository _soldItemRepository { get; private set; }
+
+
         public ApplicationUnitOfWork(ApplicationDbContext dbContext
             ,ICategoryRepository categories,
             ICompanyRepository companies,
-            IItemRepository items) : base((DbContext)dbContext)
+            IItemRepository items,
+            ISoldItemRepository solditems) : base((DbContext)dbContext)
         {
             _items = items;
             _categories = categories;
             _companies = companies;
+            _soldItemRepository = solditems; 
         }
     }
 }

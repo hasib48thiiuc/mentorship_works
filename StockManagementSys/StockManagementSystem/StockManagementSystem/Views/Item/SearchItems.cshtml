@@ -9,11 +9,10 @@
 
 <h1>SearchItems</h1>
 
-
+<form>
 <div class="container">
 
-    <select class="form-select mt-2" id="companyId" onchange="populateItems()"
-         >
+    <select class="form-select mt-2" id="companyId" onchange="populateItems()">
 
         @foreach(var item in comps)
              {        
@@ -23,23 +22,21 @@
         </option>
              } 
     </select>
-    <label for="exampleFormControlInput1" style="display:inline;" class="form-label">Email address</label>
+    <label class="mt-2" id="itemId" style="display:inline;">Email address</label>
 
-    <select class="form-select" id="itemId" style="display:inline;" aria-label="Default select example">
+    <select class="form-select mt-2" id="itemId" style="display:inline;">
+            <option selected>
+                >----Select Item----
+            </option>
     </select>
 </div>
-
+</form>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 
 <script>
 
-    var itemname;
-
-    var companyname;
-    var quantity;
-    var list = [];
-    var i = 0;
+ 
     //var quantityToChange = document.getElementById('QuantityToChange').value;
 
     function populateItems() {
@@ -51,7 +48,7 @@
         var selectedItemName = selectedOption.textContent;
 
         // Assign the text of the selected option element to a JavaScript variable.
-        companyname = selectedItemName;
+        //companyname = selectedItemName;
 
         $.ajax({
             url: "/Item/GetCompanyById",
@@ -59,106 +56,14 @@
             success: function (data) {
                 $("#itemId").find('option:enabled').remove(); // Clear the options before appending new ones
                 $("#itemId").append('<option value="">select item</option>');
-                $(data).each(
-                    function (key, value) {
-                        $("#itemId").append('<option value="' + value.id + '">' + value.name + '</option>');
-                    });
+               $(data).each(
+        function (key, value) {
+            $("#itemId").append('<option value="' + value.id + '">' + value.name + '</option>');
+        });
             }
         });
-
-    function CreateTable() {
-
-
-
-        var formData = new FormData(document.querySelector('form'));
-
-        // Get the value of the QuantityToChange input field.
-        var quantityToChange = formData.get('QuantityToChange');
-
-        var selectedItemId = $("#itemId").val();
-
-        var arr = [selectedItemId, itemname, companyname, quantityToChange];
-
-        list.push(arr);
-
-
-        let j = i;
-        const table = document.querySelector('table tbody');
-
-        const newRow = document.createElement('tr');
-        const serial = document.createElement('td');
-        const itemName = document.createElement('td');
-        const company = document.createElement('td');
-        const quantity = document.createElement('td');
-        serial.textContent = i;
-        itemName.textContent = list[j][1];
-        company.textContent = list[j][2];
-        quantity.textContent = list[j][3];
-
-        newRow.appendChild(serial);
-        newRow.appendChild(itemName);
-        newRow.appendChild(company);
-        newRow.appendChild(quantity);
-
-        table.appendChild(newRow);
-
-        i++;
-
-    }
-    function populateItems() {
-        var companyId = $("#companyId").val();
-        // Get the selected option element.
-        var selectedOption = document.querySelector('#companyId option:checked');
-
-        // Get the text of the selected option element.
-        var selectedItemName = selectedOption.textContent;
-
-        // Assign the text of the selected option element to a JavaScript variable.
-        companyname = selectedItemName;
-
-        $.ajax({
-            url: "/Item/GetCompanyById",
-            data: { companyId: companyId },
-            success: function (data) {
-                $("#itemId").find('option:enabled').remove(); // Clear the options before appending new ones
-                $("#itemId").append('<option value="">select item</option>');
-                $(data).each(
-                    function (key, value) {
-                        $("#itemId").append('<option value="' + value.id + '">' + value.name + '</option>');
-                    });
-            }
-        });
-    }
-
-    function updateItemDetails() {
-        var selectedItemId = $("#itemId").val();
-
-        // Log the selected item ID to the console
-        console.log("Selected item ID:", selectedItemId);
-
-        $.ajax({
-            url: "/StockIn/UpdateItemDetails",
-            data: { itemId: selectedItemId },
-            success: function (data) {
-                $('#quantity').empty();
-                $('#reorderLevel').empty();
-
-                var item = data;
-
-                // Log the Item object to the console
-                console.lo"Item: ishan", item);
-
-        $("#SelectedItemQuantity").val(item.quantity);
-        console.log("item quantity:", item.quantity);
-        console.log("item reordr:", item.reOrderLevel);
-        itemname = item.name;
-        $("#reorderLevel").val(item.reOrderLevel);
-
-
-
-    }
-        });
-    }
+     }
+   
 
          // Call the populateItems() function before the updateItemDetails() function
 

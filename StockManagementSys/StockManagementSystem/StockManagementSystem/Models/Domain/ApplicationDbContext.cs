@@ -21,6 +21,7 @@ namespace StockManagementSystem.Models.Domain
 
         public DbSet<Item> Items { get; set; }
 
+        public DbSet<StockOutItem> Solditems { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.Entity<Company>().

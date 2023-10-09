@@ -1,9 +1,13 @@
-﻿@model CompanyItemViewModel;
+﻿@using Newtonsoft.Json;
+@model CompanyItemViewModel;
 @{
     ViewData["Title"] = "StockOut";
 }
 
+
 <h1 style ="background-color:peachpuff;text-align:center">Welcome To Stock Out Section </h1>
+
+<div class="container-fluid mb-5">
 <form action="/StockOut/StockOut" method="post">
     <div class="container">
         <label asp-for="SelectedCompanyId" class="mb-1">Company</label>
@@ -38,6 +42,10 @@
         <button type="button" onclick="CreateTable()" class="btn btn-primary" value="submit">Submit</button>
     </div>
 </form>
+<button type="button" onclick="SellItem(1)" class="btn btn-outline-primary"  style="display:inline;">Sell</button>
+<button type="button" class="btn btn-outline-primary" style="display: inline;">Damage</button>
+<button type="button" class="btn btn-outline-primary" style="display: inline;">Lost</button>
+
 <table id="mytable"  class="table table-bordered caption-top">
     <caption class="caption-top">List of Items</caption>
     <thead class="table-dark ">
@@ -51,36 +59,37 @@
     <tbody>
 </tbody>
 </table>
-<button type="submit" class="btn btn-outline-primary"  value="list" style="display:inline;">Primary</button>
-<button type="button" class="btn btn-outline-primary" style="display: inline;">Primary</button>
-<button type="button" class="btn btn-outline-primary" style="display: inline;">Primary</button>
+
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <script>
+    
 
-    var itemname;
-    var companyname;
+    var itemName;
+    var companyName;
     var quantity;
     var list = [];
     var i=0;
     //var quantityToChange = document.getElementById('QuantityToChange').value;
 
 
+
+
+
     function CreateTable() {
-
-
-        
         var formData = new FormData(document.querySelector('form'));
         
         // Get the value of the QuantityToChange input field.
         var quantityToChange = formData.get('QuantityToChange');
+        
+        var itemId = $("#itemId").val();
+        var date=new Date();
 
-        var selectedItemId = $("#itemId").val();
-
-        var arr=[selectedItemId,itemname,companyname,quantityToChange];
+        var row={itemId,itemName,companyName,quantityToChange,date};
             
-        list.push(arr);
+        list.push(row);
 
 
         let j=i;
@@ -88,18 +97,18 @@
 
             const newRow= document.createElement('tr');
             const serial=document.createElement('td');
-            const itemName=document.createElement('td');
+            const itemName1=document.createElement('td');
             const company=document.createElement('td');
-            const quantity = document.createElement('td');
+            const formQuantity = document.createElement('td');
             serial.textContent=i;
-            itemName.textContent=list[j][1];
-            company.textContent=list[j][2]; 
-            quantity.textContent= list[j][3];
+            itemName1.textContent=itemName;
+            company.textContent=companyName; 
+            formQuantity.textContent= quantityToChange;
 
             newRow.appendChild(serial);
-            newRow.appendChild(itemName);
+            newRow.appendChild(itemName1);
             newRow.appendChild(company);
-            newRow.appendChild(quantity);
+            newRow.appendChild(formQuantity);
 
             table.appendChild(newRow);
 
@@ -115,10 +124,10 @@
         var selectedItemName = selectedOption.textContent;
 
         // Assign the text of the selected option element to a JavaScript variable.
-        companyname= selectedItemName;
+        companyName= selectedItemName;
 
         $.ajax({
-            url: "/StockIn/GetItemsByCompanyId",
+            url: "/StockOut/GetItemsByCompanyId",
             data: { companyId: companyId },
             success: function (data) {
                 $("#itemId").find('option:enabled').remove(); // Clear the options before appending new ones
@@ -131,14 +140,36 @@
         });
     }
 
+   function SellItem(stockOutType) 
+   {
+
+    const model={items:list,stockOutType:stockOutType }
+          var jsonString = JSON.stringify(model);
+
+
+        $.ajax({
+            url:"/StockOut/SellItem",
+            method: 'POST',
+            dataType:'Json',
+            data:jsonString ,
+            contentType: 'application/json',
+            success: function (data) {
+                // Handle the response from the server.
+            }
+        });
+
+   }
+
+
     function updateItemDetails() {
         var selectedItemId = $("#itemId").val();
+
 
         // Log the selected item ID to the console
         console.log("Selected item ID:", selectedItemId);
 
         $.ajax({
-            url: "/StockIn/UpdateItemDetails",
+            url: "/StockOut/UpdateItemDetails",
             data: { itemId: selectedItemId },
             success: function (data) {
                 $('#quantity').empty();
@@ -152,7 +183,7 @@
                 $("#SelectedItemQuantity").val(item.quantity);
                 console.log("item quantity:", item.quantity);
                 console.log("item reordr:", item.reOrderLevel);
-                itemname=item.name;
+                itemName=item.name;
                 $("#reorderLevel").val(item.reOrderLevel);
 
 

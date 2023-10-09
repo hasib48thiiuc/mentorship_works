@@ -82,6 +82,20 @@ namespace StockManagementSystem.Services
 
         }
 
+        public void DeleteQuantity(List<SoldItemsBO> items)
+        {
+
+            foreach(var item in items)
+            {
+
+                Item itemtodelete=_unitOfWork._items.GetById(item.Id);
+                itemtodelete.Quantity -= item.QuantityToChange;
+                _unitOfWork._items.Update(itemtodelete);
+                _unitOfWork.Save();
+
+            }
+        }
+
         /* public void Update(CategoryBO item)
          {
              CategoryEO catEO = _mapper.Map<CategoryEO>(item);

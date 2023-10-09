@@ -8,5 +8,7 @@ namespace StockManagementSystem.UnitOfWorks
         public ICategoryRepository _categories { get;  }
         public ICompanyRepository _companies { get; }
 
+        public ISoldItemRepository _soldItemRepository { get; }
+
     }
 }
