@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using StockManagementSystem.BusinessObjects;
 using StockManagementSystem.Models.Domain;
 using StockManagementSystem.UnitOfWorks;
@@ -82,19 +83,23 @@ namespace StockManagementSystem.Services
 
         }
 
-        public void DeleteQuantity(List<SoldItemsBO> items)
+        public void DeleteQuantity(List<StockOutItemBO> items)
         {
 
             foreach(var item in items)
             {
 
-                Item itemtodelete=_unitOfWork._items.GetById(item.Id);
+                Item itemtodelete=_unitOfWork._items.GetById(item.ItemId);
                 itemtodelete.Quantity -= item.QuantityToChange;
                 _unitOfWork._items.Update(itemtodelete);
                 _unitOfWork.Save();
 
             }
         }
+        
+    
+
+
 
         /* public void Update(CategoryBO item)
          {

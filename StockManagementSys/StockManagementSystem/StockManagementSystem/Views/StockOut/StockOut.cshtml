@@ -5,193 +5,202 @@
 }
 
 
-<h1 style ="background-color:peachpuff;text-align:center">Welcome To Stock Out Section </h1>
+<h1 style="background-color:peachpuff;text-align:center">Welcome To Stock Out Section </h1>
 
 <div class="container-fluid mb-5">
-<form action="/StockOut/StockOut" method="post">
-    <div class="container">
-        <label asp-for="SelectedCompanyId" class="mb-1">Company</label>
+    <form id="myForm" action="/StockOut/StockOut" method="post">
+        <div class="container">
+            <label asp-for="SelectedCompanyId" class="mb-1">Company</label>
 
-        <select class="form-select mt-2" id="companyId" onchange="populateItems() "
+            <select class="form-select mt-2" id="companyId" onchange="populateItems() "
                     asp-for="SelectedCompanyId">
-            <option disabled selected>
-                >----Select Item----
-            </option>
-            @foreach (var item in Model.Companies)
-            {        
-                <option asp-for="SelectedCompanyId"
-                                 onchange="populateItems()"
-                                 id="companyId" value="@item.Id">@item.Name</option>
-            }
-        </select>
-        <label  asp-for="SelectedItemId" class="mb-1">Item</label>
+                <option disabled selected>
+                    >----Select Item----
+                </option>
+                @foreach (var item in Model.Companies)
+                {        
+                    <option asp-for="SelectedCompanyId"
+                            onchange="populateItems()"
+                            id="companyId" value="@item.Id">@item.Name</option>
+                }
+            </select>
+            <label asp-for="SelectedItemId" class="mb-1">Item</label>
 
-        <select class="form-select mt-2" id="itemId"  onchange="updateItemDetails()"
-                asp-for="SelectedItemId">
-            <option selected>
-                >----Select Item----
-            </option>
+            <select class="form-select mt-2" id="itemId"  onchange="updateItemDetails()"
+                    asp-for="SelectedItemId">
+                <option selected>
+                    >----Select Item----
+                </option>
 
-        </select>
-        <label asp-for="SelectedItem.Quantity" class=" col-sm-2 col-form-label">Quantity</label>
-        <input readonly class="form-select mt-2" type="number" name="SelectedItemQuantity" id="SelectedItemQuantity" asp-for="SelectedItem.Quantity" placeholder="Quantity" />
-        <label asp-for="SelectedItem.ReOrderLevel" class="mb-1">ReOrder Level</label>
-        <input readonly class="form-select mt-2" type="number" name="SelectedItemReorderLevel" id="reorderLevel" asp-for="SelectedItem.ReOrderLevel" placeholder="Reorder Level" />
-        <label asp-for="QuantityToChange"  name="QuantityToChange" id="QuantityToChange"  class="mb-1">Stock  Quantity</label>
-        <input type="number" class="form align-content-md-start"  name="QuantityToChange" id="QuantityToChange" asp-for="QuantityToChange" placeholder="Quantity to Minus" />
-        <button type="button" onclick="CreateTable()" class="btn btn-primary" value="submit">Submit</button>
-    </div>
-</form>
-<button type="button" onclick="SellItem(1)" class="btn btn-outline-primary"  style="display:inline;">Sell</button>
-<button type="button" class="btn btn-outline-primary" style="display: inline;">Damage</button>
-<button type="button" class="btn btn-outline-primary" style="display: inline;">Lost</button>
+            </select>
+            <label asp-for="SelectedItem.Quantity" class=" col-sm-2 col-form-label">Quantity</label>
+            <input readonly class="form-select mt-2" type="number" name="SelectedItemQuantity" id="SelectedItemQuantity" asp-for="SelectedItem.Quantity" placeholder="Quantity" />
+            <label asp-for="SelectedItem.ReOrderLevel" class="mb-1">ReOrder Level</label>
+            <input readonly class="form-select mt-2" type="number" name="SelectedItemReorderLevel" id="reorderLevel" asp-for="SelectedItem.ReOrderLevel" placeholder="Reorder Level" />
+            <label asp-for="QuantityToChange" name="QuantityToChange" id="QuantityToChange" class="mb-1">Stock  Quantity</label>
+            <input type="number" class="form align-content-md-start" name="QuantityToChange" id="QuantityToChange" asp-for="QuantityToChange" placeholder="Quantity to Minus" />
+            <button type="button" onclick="CreateTable()" class="btn btn-primary" value="submit">Submit</button>
+        </div>
+    </form>
+    <button type="button" onclick="SellItem(1)" class="btn btn-outline-primary" style="display:inline;">Sell</button>
+    <button type="button" onclick="SellItem(2)" class="btn btn-outline-primary" style="display:inline;">Damage</button>
+    <button type="button" onclick="SellItem(3)" class="btn btn-outline-primary" style="display:inline;">Lost</button>
 
-<table id="mytable"  class="table table-bordered caption-top">
-    <caption class="caption-top">List of Items</caption>
-    <thead class="table-dark ">
-        <tr>
-            <th scope="col">#</th>
-            <th scope="col">Item</th>
-            <th scope="col">Company</th>
-            <th scope="col">Quantity</th>
-        </tr>
-    </thead>
-    <tbody>
-</tbody>
-</table>
+    <table id="mytable" class="table table-bordered caption-top">
+        <caption class="caption-top">List of Items</caption>
+        <thead class="table-dark ">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Item</th>
+                <th scope="col">Company</th>
+                <th scope="col">Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
 
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <script>
-    
-
-    var itemName;
-    var companyName;
-    var quantity;
-    var list = [];
-    var i=0;
-    //var quantityToChange = document.getElementById('QuantityToChange').value;
 
 
+     var itemName;
+     var companyName;
+     var quantity;
+     var list = [];
+     var i=0;
+     //var quantityToChange = document.getElementById('QuantityToChange').value;
 
 
 
-    function CreateTable() {
-        var formData = new FormData(document.querySelector('form'));
-        
-        // Get the value of the QuantityToChange input field.
-        var quantityToChange = formData.get('QuantityToChange');
-        
-        var itemId = $("#itemId").val();
-        var date=new Date();
-
-        var row={itemId,itemName,companyName,quantityToChange,date};
-            
-        list.push(row);
 
 
-        let j=i;
-            const table = document.querySelector('table tbody');
+     function CreateTable() {
+         var formData = new FormData(document.querySelector('form'));
 
-            const newRow= document.createElement('tr');
-            const serial=document.createElement('td');
-            const itemName1=document.createElement('td');
-            const company=document.createElement('td');
-            const formQuantity = document.createElement('td');
-            serial.textContent=i;
-            itemName1.textContent=itemName;
-            company.textContent=companyName; 
-            formQuantity.textContent= quantityToChange;
+         // Get the value of the QuantityToChange input field.
+         var quantityToChange = formData.get('QuantityToChange');
 
-            newRow.appendChild(serial);
-            newRow.appendChild(itemName1);
-            newRow.appendChild(company);
-            newRow.appendChild(formQuantity);
+         var itemId = $("#itemId").val();
+         var date=new Date();
 
-            table.appendChild(newRow);
+         var row={itemId,itemName,companyName,quantityToChange,date};
 
-            i++;
-            
+         list.push(row);
+
+
+         let j=i;
+             const table = document.querySelector('table tbody');
+
+             const newRow= document.createElement('tr');
+             const serial=document.createElement('td');
+             const itemName1=document.createElement('td');
+             const company=document.createElement('td');
+             const formQuantity = document.createElement('td');
+             serial.textContent=i;
+             itemName1.textContent=itemName;
+             company.textContent=companyName;
+             formQuantity.textContent= quantityToChange;
+
+             newRow.appendChild(serial);
+             newRow.appendChild(itemName1);
+             newRow.appendChild(company);
+             newRow.appendChild(formQuantity);
+
+             table.appendChild(newRow);
+
+             i++;
+
+     }
+     function populateItems() {
+         var companyId = $("#companyId").val();
+         // Get the selected option element.
+         var selectedOption = document.querySelector('#companyId option:checked');
+
+         // Get the text of the selected option element.
+         var selectedItemName = selectedOption.textContent;
+
+         // Assign the text of the selected option element to a JavaScript variable.
+         companyName= selectedItemName;
+
+         $.ajax({
+             url: "/StockOut/GetItemsByCompanyId",
+             data: { companyId: companyId },
+             success: function (data) {
+                 $("#itemId").find('option:enabled').remove(); // Clear the options before appending new ones
+                 $("#itemId").append('<option value="">select item</option>');
+                 $(data).each(
+                     function (key, value) {
+                         $("#itemId").append('<option value="' + value.id + '">' + value.name + '</option>');
+                     });
+             }
+         });
+     }
+
+    function SellItem(stockOutType)
+    {
+
+     const model={items:list,stockOutType:stockOutType }
+           var jsonString = JSON.stringify(model);
+
+
+         $.ajax({
+             url:"/StockOut/SellItem",
+
+             method: 'POST',
+
+             dataType:'Json',
+
+             data:jsonString ,
+
+             contentType: 'application/json',
+
+             success: function (data) {
+
+                 document.getElementById("myForm").reset();
+
+                 alert(data);
+
+             }
+         });
+
     }
-    function populateItems() {
-        var companyId = $("#companyId").val();
-        // Get the selected option element.
-        var selectedOption = document.querySelector('#companyId option:checked');
-
-        // Get the text of the selected option element.
-        var selectedItemName = selectedOption.textContent;
-
-        // Assign the text of the selected option element to a JavaScript variable.
-        companyName= selectedItemName;
-
-        $.ajax({
-            url: "/StockOut/GetItemsByCompanyId",
-            data: { companyId: companyId },
-            success: function (data) {
-                $("#itemId").find('option:enabled').remove(); // Clear the options before appending new ones
-                $("#itemId").append('<option value="">select item</option>');
-                $(data).each(
-                    function (key, value) {
-                        $("#itemId").append('<option value="' + value.id + '">' + value.name + '</option>');
-                    });
-            }
-        });
-    }
-
-   function SellItem(stockOutType) 
-   {
-
-    const model={items:list,stockOutType:stockOutType }
-          var jsonString = JSON.stringify(model);
 
 
-        $.ajax({
-            url:"/StockOut/SellItem",
-            method: 'POST',
-            dataType:'Json',
-            data:jsonString ,
-            contentType: 'application/json',
-            success: function (data) {
-                // Handle the response from the server.
-            }
-        });
-
-   }
+     function updateItemDetails() {
+         var selectedItemId = $("#itemId").val();
 
 
-    function updateItemDetails() {
-        var selectedItemId = $("#itemId").val();
+         // Log the selected item ID to the console
+         console.log("Selected item ID:", selectedItemId);
 
+         $.ajax({
+             url: "/StockOut/UpdateItemDetails",
+             data: { itemId: selectedItemId },
+             success: function (data) {
+                 $('#quantity').empty();
+                 $('#reorderLevel').empty();
 
-        // Log the selected item ID to the console
-        console.log("Selected item ID:", selectedItemId);
+                 var item = data;
 
-        $.ajax({
-            url: "/StockOut/UpdateItemDetails",
-            data: { itemId: selectedItemId },
-            success: function (data) {
-                $('#quantity').empty();
-                $('#reorderLevel').empty();
+                 // Log the Item object to the console
+                 console.log("Item: ishan", item);
 
-                var item = data;
-
-                // Log the Item object to the console
-                console.log("Item: ishan", item);
-
-                $("#SelectedItemQuantity").val(item.quantity);
-                console.log("item quantity:", item.quantity);
-                console.log("item reordr:", item.reOrderLevel);
-                itemName=item.name;
-                $("#reorderLevel").val(item.reOrderLevel);
+                 $("#SelectedItemQuantity").val(item.quantity);
+                 console.log("item quantity:", item.quantity);
+                 console.log("item reordr:", item.reOrderLevel);
+                 itemName=item.name;
+                 $("#reorderLevel").val(item.reOrderLevel);
 
 
 
-            }
-        });
-    }
-  
-     // Call the populateItems() function before the updateItemDetails() function
+             }
+         });
+     }
+
+      // Call the populateItems() function before the updateItemDetails() function
 
 </script>

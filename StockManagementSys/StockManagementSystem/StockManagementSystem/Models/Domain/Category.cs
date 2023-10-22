@@ -1,4 +1,6 @@
-﻿namespace StockManagementSystem.Models.Domain
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace StockManagementSystem.Models.Domain
 {
     public class Category
     {
@@ -7,7 +9,7 @@
         public string? Name { get; set; }
 
         public List<Item>? Items { get; set; }
-    
+
 
     }
 }

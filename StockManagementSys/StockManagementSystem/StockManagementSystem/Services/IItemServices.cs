@@ -13,7 +13,7 @@ namespace StockManagementSystem.Services
         ItemBO GetById(int id);
         void UpdateItemQuantity(int id, int quantity);
         List<CategoryBO> FindCategory(int id);
-        void DeleteQuantity(List<SoldItemsBO> items);
+        void DeleteQuantity(List<StockOutItemBO> items);
         //void Update(ItemBO  item);
     }
 }

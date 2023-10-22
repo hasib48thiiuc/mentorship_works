@@ -1,6 +1,6 @@
 ﻿namespace StockManagementSystem.BusinessObjects
 {
-    public class SoldItemsBO
+    public class StockOutItemBO
     {
         public int Id { get; set; }
         public int ItemId { get; set; }
@@ -12,7 +12,15 @@
 
         public int QuantityToChange { get; set; }
 
+        public StockOutType StockOutType { get; set; }
 
-        public DateTime Date { get; set; }
+        public DateTime date { get; set; }
+    }
+
+    public enum StockOutType
+    {
+        Sell = 1,
+        Damage = 2,
+        Lost = 3
     }
 }

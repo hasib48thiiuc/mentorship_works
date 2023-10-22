@@ -104,6 +104,9 @@ namespace StockManagementSystem.Controllers
             return Json(cats);
         }
 
+       
+
+
         /* public IActionResult DeleteItem(int id)
          {
              _UnitOfWork._items.Delete(id);

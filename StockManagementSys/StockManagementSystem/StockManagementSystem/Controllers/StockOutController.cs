@@ -5,6 +5,9 @@ using StockManagementSystem.BusinessObjects;
 using StockManagementSystem.Models;
 using StockManagementSystem.Models.Domain;
 using StockManagementSystem.Services;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Globalization;
+using StockOutType = StockManagementSystem.Models.Domain.StockOutType;
 
 namespace StockManagementSystem.Controllers
 {
@@ -12,15 +15,15 @@ namespace StockManagementSystem.Controllers
     {
 
         private readonly ICompanyServices _companyService;
-        private readonly ISoldItemsService _soldItemsService;
+        private readonly IStockOutItemService _soldItemsService;
         private readonly IItemServices _itemServices;
 
         private IMapper _mapper;
 
         public StockOutController(IItemServices itemServices,
-            ICompanyServices companyService, 
+            ICompanyServices companyService,
             IMapper mapper,
-            ISoldItemsService soldItemsService)
+            IStockOutItemService soldItemsService)
         {
             _mapper = mapper;
             _companyService = companyService;
@@ -66,37 +69,67 @@ namespace StockManagementSystem.Controllers
             return Json(item2);
         }
         [HttpPost]
-        public IActionResult SellItem( [FromBody] StockOutRoot stockOutRoot )
+        public IActionResult SellItem([FromBody] StockOutRoot stockOutRoot)
         {
 
 
-/*            List<SoldItem> itemList = JsonConvert.DeserializeObject<List<SoldItem>>(items);
-*/
+            /*            List<SoldItem> itemList = JsonConvert.DeserializeObject<List<SoldItem>>(items);
+            */
+
+            List<StockOutItem> Items = new List<StockOutItem>();
+
+            foreach (var solditem in stockOutRoot.Items)
+            {
+                solditem.date =DateTime.Now;
+                solditem.StockOutType = stockOutRoot.StockOutType;
+                Items.Add(solditem);
+            }
+            List<StockOutItemBO> item = _mapper.Map<List<StockOutItem>, List<StockOutItemBO>>(Items);
+
+            _itemServices.DeleteQuantity(item);
+
+            _soldItemsService.Create(item);
+
+            var message = $"Successfully items are removed";
 
 
-             foreach(var solditem in stockOutRoot.Items )
-             {
-                 solditem.Date = DateTime.Now;
-                solditem.StockOutType=stockOutRoot.StockOutType;
-             }
-             List<SoldItemsBO> item = _mapper.Map<List<StockOutItem>, List<SoldItemsBO>>(stockOutRoot.Items );
 
-             _itemServices.DeleteQuantity(item);
+            return Json(message);
+        }
 
-             _soldItemsService.Create(item);
+        public IActionResult SearchSellItemByDate()
+        {
+            List<StockOutItemBO> item1 = _soldItemsService.GetAll();
+            List<StockOutItem> items = _mapper.Map<List<StockOutItemBO>, List<StockOutItem>>(item1);
 
+            var distinctDates = items.Select(item => item.date.Date).Distinct().ToList();
 
+            /*
+                        List<StockOutItem> distinctItems = items
+                            .Where(item => distinctDates.Contains(item.date.Date))*/
 
-
+            ViewData["solditem"] = distinctDates;
             return View();
+        }
+        [HttpPost]
+        public JsonResult SearchItems([FromBody] SearchByDatesModel jsonstring)
+        {
+
+
+            DateTime date1 = DateTime.ParseExact(jsonstring.Date1, "yyyy-MM-dd", CultureInfo.InvariantCulture);
+            DateTime date2 = DateTime.ParseExact(jsonstring.Date2, "yyyy-MM-dd", CultureInfo.InvariantCulture);
+
+               List<StockOutItem> items=  _soldItemsService.GetItemQuantity(date1,date2);
+            
+
+            return Json(items);
         }
     }
 
+    //for ajax receiving
+    
     public class StockOutRoot
     {
-
-
-
         public List<StockOutItem> Items { get; set; }
 
         public StockOutType StockOutType { get; set; }  

@@ -11,7 +11,7 @@ namespace StockManagementSystem.Profiles
             CreateMap<Category,CategoryBO>().ReverseMap();
             CreateMap<Company, CompanyBO>().ReverseMap();
             CreateMap<Item, ItemBO>().ReverseMap();
-
+            CreateMap<StockOutItem,StockOutItemBO>().ReverseMap();
 
 
         }

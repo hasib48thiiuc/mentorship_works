@@ -8,11 +8,14 @@ using System.Reflection;
 using StockManagementSystem;
 using StockManagementSystem.Entities;
 using StockManagementSystem.Services;
+
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using StockManagementSystem.Repository;
 using StockManagementSystem.UnitOfWorks;
 
-var builder = WebApplication.CreateBuilder(args);
+ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -33,7 +36,7 @@ builder.Services
 .AddSignInManager<ApplicationSignInManager>()
 .AddDefaultTokenProviders();
 
-builder.Services.AddAuthentication()
+builder.Services.AddAuthentication() 
        .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, options =>
        {
            options.LoginPath = new PathString("/Account/Login");
@@ -66,7 +69,7 @@ builder.Services.Configure<IdentityOptions>(options =>
     "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
     options.User.RequireUniqueEmail = true;
 });
-
+builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<ICompanyRepository, CompanyRepository>();
 builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
 builder.Services.AddTransient<IItemRepository, ItemRepository>();
@@ -76,13 +79,20 @@ builder.Services.AddTransient<IApplicationUnitOfwork, ApplicationUnitOfWork>();
 builder.Services.AddTransient<ICategoryService, CategoryService>();
 builder.Services.AddTransient<ICompanyServices, CompanyService>();
 builder.Services.AddTransient<IItemServices, ItemServices>();
-builder.Services.AddTransient<ISoldItemsService, SoldItemsService>();
+builder.Services.AddTransient<IStockOutItemService, StockOutItemService>();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-builder.Services.AddControllersWithViews();
+
 
 
 var app = builder.Build();
+void ConfigureServices(IServiceCollection services) {
 
+    //...
+
+    services.AddHealthChecks();
+    services.AddAuthorization();
+    //...
+}
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

@@ -15,7 +15,7 @@
         public int QuantityToChange { get;set; }
 
 
-        public DateTime Date { get; set; }
+        public DateTime date { get; set; }
 
         public StockOutType StockOutType { get; set; }
     }

@@ -68,6 +68,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/mentorship_works/StockManagementSys/StockManagementSystem/StockManagementSystem/Views/Item/SearchItemByDate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxTZWFyY2hJdGVtQnlEYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/mentorship_works/StockManagementSys/StockManagementSystem/StockManagementSystem/Views/Item/SearchItems.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxTZWFyY2hJdGVtcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -90,6 +94,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/mentorship_works/StockManagementSys/StockManagementSystem/StockManagementSystem/Views/StockIn/StockIn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tJblxTdG9ja0luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/mentorship_works/StockManagementSys/StockManagementSystem/StockManagementSystem/Views/StockOut/SearchSellItemByDate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tPdXRcU2VhcmNoU2VsbEl0ZW1CeURhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/mentorship_works/StockManagementSys/StockManagementSystem/StockManagementSystem/Views/StockOut/StockOut.cshtml]
